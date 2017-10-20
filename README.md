@@ -2,6 +2,29 @@
 
 Questo progetto vede la realizzazione di un prototipo(tutto automatizzato) per prevenerire tempestivamente l'attacco delle mosche in un uliveto.
 
+__________________________________________________________________
+
+# <a name="ancora-indice"></a> Indice
+* <a href="#ancora-componenti">Componentistica</a>
+* <a href="#ancora-struttura">Struttura</a>
+ * <a href="#ancora-nodomaster">Struttura Nodo Master</a>
+ * <a href="#ancora-nodoslave">Struttura Nodo Slave</a>
+ * <a href="#ancora-alimentazione">Alimentazione Nodi</a>
+ * <a href="#ancora-comunicazione-nodi">Comunicazione Nodi</a>
+ 
+__________________________________________________________________________________
+
+## <a name="ancora-componenti"/></a> Componentistica
+ * [Raspberry Pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/);
+ * [Camera Raspberry](https://www.raspberrypi.org/products/camera-module-v2/);
+ * [Apio DONGLE](https://www.apio.cc/component/virtuemart/store_ita/prodotti/apio-dongle-1-4-detail?Itemid=0);
+ * Saponetta Wi-Fi;
+ * [Modulo TP4056](http://www.hotmcu.com/tp4056-micro-usb-5v-1a-lithium-battery-charger-with-protection-p-176.html);
+ * Pile al litio;
+ * Pannello solare.
+ 
+____________________________________________________________________________________
+
 ## <a name="ancora-struttura"></a> Struttura
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/struttura_generale.jpg"/>
 Come possiamo vedere da questa struttura generale, i nodi della rete comunicano attraverso una rete senza fili, inviando dati in entrambe le direzioni.
