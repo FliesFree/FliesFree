@@ -21,6 +21,7 @@ ________________________________________________________________________________
  * Saponetta Wi-Fi;
  * [Modulo TP4056](http://www.hotmcu.com/tp4056-micro-usb-5v-1a-lithium-battery-charger-with-protection-p-176.html);
  * Pile al litio;
+ * Alzatore di tensione da 3.3v a 5v;
  * Pannello solare.
  
 *N.B: Per tutte le componenti, ad esclusione della saponetta Wi-Fi, bisogna prenderne di un numero uguale a quello dei nodi.
