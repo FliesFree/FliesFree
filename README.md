@@ -23,6 +23,9 @@ ________________________________________________________________________________
  * Pile al litio;
  * Pannello solare.
  
+*N.B: Per tutte le componenti, ad esclusione della saponetta Wi-Fi, bisogna prenderne di un numero uguale a quello dei nodi.
+Esempio: 3 Nodi -> 3 Raspberry, 3 Camera, 3 Apio DONGLE, 3 Moduli TP4056, 3 pile e 3 pannelli.*
+ 
 ____________________________________________________________________________________
 
 ## <a name="ancora-struttura"></a> Struttura
