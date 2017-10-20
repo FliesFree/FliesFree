@@ -11,6 +11,7 @@ __________________________________________________________________
   * <a href="#ancora-nodoslave">Struttura Nodo Slave</a>
   * <a href="#ancora-alimentazione">Alimentazione Nodi</a>
   * <a href="#ancora-comunicazione_nodi">Comunicazione Nodi</a>
+* <a href="#ancora-esempio_lavoro">Esempio</a>
 * <a href="#ancora-moddilavoro">Modalità di lavoro</a>
   * <a href="#ancora-fase1">Fase 1 - Divisione della mappa</a>
   * <a href="#ancora-fase2">Fase 2 - Inserimento di ripetitori di segnale</a>
@@ -87,6 +88,21 @@ Ogni nodo della rete elabora le immagini direttamente sul posto... al nodo maste
 
 _____________________________________________________________________________
 
+## <a name="ancora-esempio_lavoro"></a> Esempio
+ * Hardware:
+   * Ogni nodo avrà a disposizione una trappola a feromone e la fotocamera di raspberry punterà su quest'ultima<br>
+   * La raspberry per la maggiorparte del tempo sarà in "sleep" e si sveglierà solamente per scattare una foto alla trappola ed elaborare l'immagine<br>
+   * Una volta elaborata l'immagine, con degli algoritmi specifici, verranno mandati i dati relativi a quest'ultima sul cloud(nel caso del nodo master) oppure al nodo master(nel caso di nodo slave)<br>
+   * La raspberry tornerà in fase di "sleep"<br>
+   
+ * Software:
+   * Il cloud riceve i dati inviati dal master e gli andrà ad archiviare in un database
+   * Tramite un algoritmo verranno verificati i dati mandati dal nodo master:
+     * Se l'algoritmo prevede un problema su un nodo manda un segnale(SMS e/o notifica app) con il relativo problema
+     * Se l'algoritmo non prevede nessun problema non viene mandato nessun riscontro
+   * Tramite un'app è possibile monitorare quello che sta accadendo nell'uliveto
+_____________________________________________________________________________
+
 ## <a name="ancora-moddilavoro"></a> Modalità di lavoro
 Come si è detto all'inizio, il progetto consiste nell'evitare l'attacco della mosca in un uliveto, in modo da agire nel momento giusto all'eliminazione.
 Questo fa si che si produca un olio di maggiore qualità.<br>
@@ -125,4 +141,5 @@ Inserimo i ripetitori in punti in cui si possa ripetere al meglio il segnale di 
 Bisogna inserire una trappola a feromone per mosche in ogni punto in cui andremo a piazzare un nodo.
 Questa trappola creerà una comunicazione su quello che sta accadendo:
 le trappole cattureranno una certa quantità di mosche, le fotocamere delle raspberry puntano su tali trappole e scatteranno delle foto che verranno successivamente elaborate per garantire un'azione tempestiva da parte dell'agricoltore(qual'ora ci fosse bisogno).
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Mappe/mappa_uliveto_divisa_contrappole.png"/>
 
