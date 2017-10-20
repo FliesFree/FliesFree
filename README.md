@@ -7,10 +7,10 @@ __________________________________________________________________
 # <a name="ancora-indice"></a> Indice
 * <a href="#ancora-componenti">Componentistica</a>
 * <a href="#ancora-struttura">Struttura</a>
- * <a href="#ancora-nodomaster">Struttura Nodo Master</a>
- * <a href="#ancora-nodoslave">Struttura Nodo Slave</a>
- * <a href="#ancora-alimentazione">Alimentazione Nodi</a>
- * <a href="#ancora-comunicazione-nodi">Comunicazione Nodi</a>
+  * <a href="#ancora-nodomaster">Struttura Nodo Master</a>
+  * <a href="#ancora-nodoslave">Struttura Nodo Slave</a>
+  * <a href="#ancora-alimentazione">Alimentazione Nodi</a>
+  * <a href="#ancora-comunicazione_nodi">Comunicazione Nodi</a>
  
 __________________________________________________________________________________
 
