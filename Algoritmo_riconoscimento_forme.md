@@ -5,3 +5,6 @@ Partizionamento di un'immagine in zone omogenee sulla base di un certo criterio 
 
 Obiettivo: Riconoscere oggetti(mosche) su una trappola a fermoni per mosche.<br>
 
+### Edge Detection
+### Tresholding
+### Region Based
