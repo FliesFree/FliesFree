@@ -58,6 +58,17 @@ Per il nodo master le cose sono più semplici:
 In questo caso, a differenza del nodo master, non abbiamo la saponetta Wi-Fi, perchè, una volta elaborata l'immagine, i dati vengono inoltrati al nodo master che provvederà a piazzarli sul Cloud.
 
 ### <a name="ancora-alimentazione"></a> 3. Alimentazione Nodi
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/alimentazione.png"/>
+
+ * Pannello solare
+ * Cavetti
+ * Modulo TP4056
+ * Pila al litio
+ * Alzatore di tensione
+ 
+In questo caso è la pila al litio che fornisce energia al sistema e il pannello solare fornisce energia alla batteria.
+Grazie all'ausilio del modulo TP4056 è possibile ricaricare la pila tramite il pannello solare.
+Un alzatore di tensione collaga il circuito di alimentazione alla Raspberry fornedoli esattamente 5v(tensione di lavoro della scheda).
 
 ### <a name="ancora-comunicazione_nodi"></a> 5. Comunicazione Nodi
 
