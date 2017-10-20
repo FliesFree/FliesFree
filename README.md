@@ -11,6 +11,7 @@ __________________________________________________________________
   * <a href="#ancora-nodoslave">Struttura Nodo Slave</a>
   * <a href="#ancora-alimentazione">Alimentazione Nodi</a>
   * <a href="#ancora-comunicazione_nodi">Comunicazione Nodi</a>
+* <a href="#ancora-esempiodilavoro">Esempio di lavoro</a>
  
 __________________________________________________________________________________
 
@@ -71,4 +72,25 @@ Grazie all'ausilio del modulo TP4056 è possibile ricaricare la pila tramite il 
 Un alzatore di tensione collaga il circuito di alimentazione alla Raspberry fornedoli esattamente 5v(tensione di lavoro della scheda).
 
 ### <a name="ancora-comunicazione_nodi"></a> 5. Comunicazione Nodi
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/comunicazione.png"/>
+In questo schema possiamo vedere come avviene la comunicazione fra i vari nodi.
+Le Apio DONGLE comunicano in entrambi i sensi e permettono ai nodi di passarsi le informazioni e dati.
+Tutti i dati convoglieranno sul nodo master che provvederà a mettersi sul Cloud.
+Ogni nodo della rete elabora le immagini direttamente sul posto... al nodo master verranno passate solamente le informazioni inerenti a tali immagini.
 
+_____________________________________________________________________________
+
+## <a name="ancora-esempiodilavoro"></a> Esempio di lavoro
+Come si è detto all'inizio, il progetto consiste nell'evitare l'attacco della mosca in un uliveto, in modo da agire nel momento giusto all'eliminazione.
+Questo fa si che si produca un olio di maggiore qualità.
+
+*Ma come inseriamo il nostro prototipo in un uliveto?*
+Per prima cosa, non avendo a disposizione prese di corrente o altro, si è pensato ad autoalimentare l'intero sistema con una pila e un pannelletto solare per ogni nodo.
+Per inserire il prototipo nell'uliveto ci occorre una piantina o planimetria dell'area da proteggere e inserire tanti nodi in base alla grandezza.
+Più grande è il terreno e di più nodi abbiamo bisogno, ma solamente uno e uno solo sarà il nodo master.
+Sapendo il range, entro il quale agisce la comunicazione di ogni nodo, possiamo dividere l'uliveto in zone e piazzare i nodi in ogni zona.
+Se dovessero esserci problemi di comunicazione, ad esempio: una zona è troppo lontana per comunicare con il nodo master, si utilizza un ripetitore di segnale, in modo da aumetare il range di comunicazione di ogni nodo.
+La comunicazione fra i vari nodi avviene in modo diretto:<br>
+*Nodo Master -> Nodo Slave*<br>
+*Nodo Slave -> Nodo Master*<br>
+Non abbiamo una comunicazione P2P, ma una semplice comunicazione diretta.<br>
