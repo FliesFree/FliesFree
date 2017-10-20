@@ -110,8 +110,10 @@ Per questa prima fase si deve dividere il terreno di lavoro in rettangoli o quad
 Definiamo N zone che faranno parte della nostra rete e dove andremo ad inserire i nostri N nodi.
 Prendiamo una mappa di un uliveto:
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Mappe/mappa_uliveto.png"/>
+<br>
 Adesso dividiamola in parti uguali:
-<img src"https://github.com/FliesFree/FliesFree/blob/master/Foto/Mappe/mappa_uliveto_divisa.png"/>
+<br>
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Mappe/mappa_uliveto_divisa.png"/>
 Le divisioni devono avvenire in base al range di comunicazione, se ad esempio i due nodi possono comunicare ad un massimo di 120 metri, si deve dividere la mappa in blocchi di dimensione 100x100.
 Si può prevedere di dividere in blocchi più grandi inserendo tra ogni blocco un ripetitore di segnale, in modo da estendere il range di comunicazione.
 
