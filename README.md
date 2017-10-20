@@ -11,7 +11,14 @@ __________________________________________________________________
   * <a href="#ancora-nodoslave">Struttura Nodo Slave</a>
   * <a href="#ancora-alimentazione">Alimentazione Nodi</a>
   * <a href="#ancora-comunicazione_nodi">Comunicazione Nodi</a>
-* <a href="#ancora-esempiodilavoro">Esempio di lavoro</a>
+* <a href="#ancora-moddilavoro">Modalità di lavoro</a>
+  * <a href="#ancora-fase1">Fase 1 - Divisione della mappa</a>
+  * <a href="#ancora-fase2">Fase 2 - Inserimento di ripetitori di segnale</a>
+  * <a href="#ancora-fase3">Fase 3 - Alloggio trappole per zona</a>
+  * <a href="#ancora-fase4">Fase 4 - Alimentazione</a>
+  * <a href="#ancora-fase5">Fase 5 - Elaborazione immagini</a>
+  * <a href="#ancora-fase6">Fase 6 - Acquisizione dati</a>
+  * <a href="#ancora-fase7">Fase 7 - Transumanza dei dati sul Cloud</a>
  
 __________________________________________________________________________________
 
@@ -80,11 +87,11 @@ Ogni nodo della rete elabora le immagini direttamente sul posto... al nodo maste
 
 _____________________________________________________________________________
 
-## <a name="ancora-esempiodilavoro"></a> Esempio di lavoro
+## <a name="ancora-moddilavoro"></a> Modalità di lavoro
 Come si è detto all'inizio, il progetto consiste nell'evitare l'attacco della mosca in un uliveto, in modo da agire nel momento giusto all'eliminazione.
-Questo fa si che si produca un olio di maggiore qualità.
+Questo fa si che si produca un olio di maggiore qualità.<br>
 
-*Ma come inseriamo il nostro prototipo in un uliveto?*
+*Ma come inseriamo il nostro prototipo in un uliveto?*<br>
 Per prima cosa, non avendo a disposizione prese di corrente o altro, si è pensato ad autoalimentare l'intero sistema con una pila e un pannelletto solare per ogni nodo.
 Per inserire il prototipo nell'uliveto ci occorre una piantina o planimetria dell'area da proteggere e inserire tanti nodi in base alla grandezza.
 Più grande è il terreno e di più nodi abbiamo bisogno, ma solamente uno e uno solo sarà il nodo master.
@@ -94,3 +101,26 @@ La comunicazione fra i vari nodi avviene in modo diretto:<br>
 *Nodo Master -> Nodo Slave*<br>
 *Nodo Slave -> Nodo Master*<br>
 Non abbiamo una comunicazione P2P, ma una semplice comunicazione diretta.<br>
+Procediamo per gradi:
+<br>
+<br>
+
+### <a name="ancora-fase1"></a> Fase 1 - Divisione della mappa
+Per questa prima fase si deve dividere il terreno di lavoro in rettangoli o quadrati di dimensioni uguali.
+Definiamo N zone che faranno parte della nostra rete e dove andremo ad inserire i nostri N nodi.
+Prendiamo una mappa di un uliveto:
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Mappe/mappa_uliveto.png"/>
+Adesso dividiamola in parti uguali:
+<img src"https://github.com/FliesFree/FliesFree/blob/master/Foto/Mappe/mappa_uliveto_divisa.png"/>
+Le divisioni devono avvenire in base al range di comunicazione, se ad esempio i due nodi possono comunicare ad un massimo di 120 metri, si deve dividere la mappa in blocchi di dimensione 100x100.
+Si può prevedere di dividere in blocchi più grandi inserendo tra ogni blocco un ripetitore di segnale, in modo da estendere il range di comunicazione.
+
+### <a name="ancora-fase2"></a> Fase 2 - Inserimento di ripetitori
+Si è obbligati ad inserire qualche ripetitore perchè la comunicazione deve essere diretta e quindi un nodo slave, per quanto lontano possa essere, deve comunicare direttamente con il master.
+Inserimo i ripetitori in punti in cui si possa ripetere al meglio il segnale di un nodo.
+
+### <a name="ancora-fase3"></a> Fase 3 - Inserimento trappole
+Bisogna inserire una trappola a feromone per mosche in ogni punto in cui andremo a piazzare un nodo.
+Questa trappola creerà una comunicazione su quello che sta accadendo:
+le trappole cattureranno una certa quantità di mosche, le fotocamere delle raspberry puntano su tali trappole e scatteranno delle foto che verranno successivamente elaborate per garantire un'azione tempestiva da parte dell'agricoltore(qual'ora ci fosse bisogno).
+
