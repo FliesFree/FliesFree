@@ -143,3 +143,10 @@ Questa trappola creerà una comunicazione su quello che sta accadendo:
 le trappole cattureranno una certa quantità di mosche, le fotocamere delle raspberry puntano su tali trappole e scatteranno delle foto che verranno successivamente elaborate per garantire un'azione tempestiva da parte dell'agricoltore(qual'ora ci fosse bisogno).
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Mappe/mappa_uliveto_divisa_contrappole.png"/>
 
+
+__________________________________________________________________________
+
+## <a name="ancora-indice"></a> Torna all'indice
+
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/logo_rasp.png/> <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/Apio_Logo.png/>
+          
