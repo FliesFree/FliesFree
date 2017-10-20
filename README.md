@@ -8,8 +8,17 @@ Come possiamo vedere da questa struttura generale, i nodi della rete comunicano 
 Adesso vediamo nel dettaglio come sono strutturati i vari nodi, le comunicazioni e le loro alimentazioni.
 
 ### <a name="ancora-nodomaster"></a> 1. Struttura Nodo Master
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/schema_nodo_master.png"/>
+Come possiamo vedere dallo schema, il nodo master è formato da:
+* Raspberry Pi 3 
+* Camera per Raspberry
+* Apio DONGLE
+* Saponetta 3G/4G
+La Raspberry è il cuore pulsante del nodo: cattura le immagini attraverso la telecamera, le elabora e le manda sul Cloud attraverso la saponetta Wi-Fi.
+La APIO DONGLE serve per comunicare con gli altri nodi in entrambe le direzioni.
 
 ### <a name="ancora-nodoslave"></a>  2. Struttura Nodo Slave
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/schema_nodo_slave.png"/>
 
 ### <a name="ancora-alimentazione"></a> 3. Alimentazione Nodi
 
