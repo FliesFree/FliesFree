@@ -19,4 +19,7 @@ Per ridurre questi disturbi si utilizzano delle *tecniche di filtraggio*<br>
 
 ## Libreria OpenCV
 Algoritmi di elaborazione d'immagine sono tutte all'interno della libreria di OpenCV.
-Abbiamo circa 500 funzioni da poter sfruttare per l'elaborazione dell'immagine e dei video.
+Abbiamo circa 500 funzioni da poter sfruttare per l'elaborazione dell'immagine e dei video<br>
+
+Per tutta la documentazione di OpenCV è tutta sul loro sito ufficiale a questo [LINK](https://docs.opencv.org/master/).
+
