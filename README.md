@@ -178,5 +178,5 @@ __________________________________________________________________________
 
 ## <a name="ancora-indice"></a> Torna all'indice
 
-<a href="https://www.raspberrypi.org/"><img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/logo_rasp.png"/></a> <a href="https://www.apio.cc/"><img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/Apio_Logo.png"/></a> <a href="https://www.apio.cc/"><img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/flies_free_logo(2).png"/></a> <a href="https://www.apio.cc/"><img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/opencv_logo.png"/></a>
+<a href="https://www.raspberrypi.org/"><img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/logo_rasp.png"/></a> <a href="https://www.apio.cc/"><img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/Apio_Logo.png"/></a> <a href="https://github.com/FliesFree"><img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/flies_free_logo(2).png"/></a> <a href="https://opencv.org/"><img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/opencv_logo.png"/></a>
           
