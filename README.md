@@ -173,7 +173,7 @@ I dati verranno mandati al cloud dal nodo master attarverso una comunicazione se
 __________________________________________________________________________
 
 ## <a name="ancora-progettazione"></a> Progettazione
-
+In questa fase descriveremo passo passo tutte le fasi di progettazione sia hardware che software.
 __________________________________________________________________________
 
 ## <a name="ancora-indice"></a> Torna all'indice
