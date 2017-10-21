@@ -157,8 +157,19 @@ Il problema si viene a creare quando i giorni di assenza di sole sono molti di p
 Parleremo di questa problematica più in la...
 
 ### <a name="ancora-fase5"></a> Fase 5 - Elaborazione Immagini
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Componenti/raspberry_con_camera.jpg"/>
+La fotocamera posta su Raspberry catturerà le immagini nell'arco della giornata e le elaborerà attraverso la librearia OpenCV.
+<a href="https://opencv.org/"><img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/opencv_logo.png"/></a>
 
 ### <a name="ancora-fase6"></a> Fase 6 - Acquisizione dati
+Una volta acquisiti i dati, inerenti all'elaborazione dell'immagini, questi verranno inviati sul cloud attraverso un collegamento Wi-Fi con una saponetta 3G/4G.
+Prima di questo, se l'immagine elaborata è presente su un nodo slave, i dati verranno mandati sul nodo master, sarà quest'ultimo ad inoltrarli sul cloud.
+Le comunicazioni fra i nodi slave e master avviene in modalità wirless con le Apio DONGLE.
+
+### <a name="ancora-fase7"></a> Fase 7 - Transumanza dati sul cloud
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/cloud.png"/>
+I dati verranno mandati al cloud dal nodo master attarverso una comunicazione senza fili.
+
 __________________________________________________________________________
 
 ## <a name="ancora-indice"></a> Torna all'indice
