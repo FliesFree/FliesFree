@@ -172,6 +172,10 @@ I dati verranno mandati al cloud dal nodo master attarverso una comunicazione se
 
 __________________________________________________________________________
 
+## <a name="ancora-progettazione"></a> Progettazione
+
+__________________________________________________________________________
+
 ## <a name="ancora-indice"></a> Torna all'indice
 
 <a href="https://www.raspberrypi.org/"><img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/logo_rasp.png"/></a> <a href="https://www.apio.cc/"><img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/Apio_Logo.png"/></a>
