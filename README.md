@@ -3,6 +3,10 @@
 Questo progetto vede la realizzazione di un prototipo(tutto automatizzato) per prevenerire tempestivamente l'attacco delle mosche in un uliveto.<br><br>
 Nel [link seguente](http://www.pithecusa.com/hobby/ortofrutteo/Nemici/le_tre_mosche.htm) troverete una piccola spiegazione sui tre tipi di mosche più diffuse nel nostro territorio e tra queste la mosca dell'olivo
 
+<br><br>
+
+D'ora in poi chiameremo il nostro prototipo, per semplicità FFS(FliesFreeShield).
+
 __________________________________________________________________
 
 # <a name="ancora-indice"></a> Indice
@@ -17,9 +21,10 @@ __________________________________________________________________
   * <a href="#ancora-fase1">Fase 1 - Divisione della mappa</a>
   * <a href="#ancora-fase2">Fase 2 - Inserimento di ripetitori di segnale</a>
   * <a href="#ancora-fase3">Fase 3 - Alloggio trappole per zona</a>
-  * <a href="#ancora-fase4">Fase 4 - Elaborazione immagini</a>
-  * <a href="#ancora-fase5">Fase 5 - Acquisizione dati</a>
-  * <a href="#ancora-fase6">Fase 6 - Transumanza dei dati sul Cloud</a>
+  * <a href="#ancora-fase4">Fase 4 - Alloggio FFS</a>
+  * <a href="#ancora-fase5">Fase 5 - Elaborazione immagini</a>
+  * <a href="#ancora-fase6">Fase 6 - Acquisizione dati</a>
+  * <a href="#ancora-fase7">Fase 7 - Transumanza dei dati sul Cloud</a>
 * <a href="#ancora-progettazione">Progettazione</a>
  
 __________________________________________________________________________________
@@ -156,17 +161,20 @@ Questa trappola creerà una comunicazione su quello che sta accadendo:
 le trappole cattureranno una certa quantità di mosche, le fotocamere delle raspberry puntano su tali trappole e scatteranno delle foto che verranno successivamente elaborate per garantire un'azione tempestiva da parte dell'agricoltore(qual'ora ci fosse bisogno).
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Mappe/mappa_uliveto_divisa_contrappole.png"/>
 
-### <a name="ancora-fase4"></a> Fase 4 - Elaborazione Immagini
+### <a name="ancora-fase4"></a> Fase 4 - Alloggio FFS
+Una volta disposta la trappola, possiamo disporre il nostro prototipo FFS di fronte la trappola, per monitorare quello che succederà in ogni zona.
+
+### <a name="ancora-fase5"></a> Fase 5 - Elaborazione Immagini
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Componenti/raspberry_con_camera.jpg"/>
 La fotocamera posta su Raspberry catturerà le immagini nell'arco della giornata e le elaborerà attraverso la librearia OpenCV.
 <a href="https://opencv.org/"><img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/opencv_logo.png"/></a>
 
-### <a name="ancora-fase5"></a> Fase 5 - Acquisizione dati
+### <a name="ancora-fase6"></a> Fase 6 - Acquisizione dati
 Una volta acquisiti i dati, inerenti all'elaborazione dell'immagini, questi verranno inviati sul cloud attraverso un collegamento Wi-Fi con una saponetta 3G/4G.
 Prima di questo, se l'immagine elaborata è presente su un nodo slave, i dati verranno mandati sul nodo master, sarà quest'ultimo ad inoltrarli sul cloud.
 Le comunicazioni fra i nodi slave e master avviene in modalità wirless con le Apio DONGLE.
 
-### <a name="ancora-fase6"></a> Fase 6 - Transumanza dati sul cloud
+### <a name="ancora-fase7"></a> Fase 7 - Transumanza dati sul cloud
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/cloud.png"/>
 I dati verranno mandati al cloud dal nodo master attarverso una comunicazione senza fili.
 
