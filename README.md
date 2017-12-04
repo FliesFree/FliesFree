@@ -17,10 +17,9 @@ __________________________________________________________________
   * <a href="#ancora-fase1">Fase 1 - Divisione della mappa</a>
   * <a href="#ancora-fase2">Fase 2 - Inserimento di ripetitori di segnale</a>
   * <a href="#ancora-fase3">Fase 3 - Alloggio trappole per zona</a>
-  * <a href="#ancora-fase4">Fase 4 - Alimentazione</a>
-  * <a href="#ancora-fase5">Fase 5 - Elaborazione immagini</a>
-  * <a href="#ancora-fase6">Fase 6 - Acquisizione dati</a>
-  * <a href="#ancora-fase7">Fase 7 - Transumanza dei dati sul Cloud</a>
+  * <a href="#ancora-fase4">Fase 4 - Elaborazione immagini</a>
+  * <a href="#ancora-fase5">Fase 5 - Acquisizione dati</a>
+  * <a href="#ancora-fase6">Fase 6 - Transumanza dei dati sul Cloud</a>
 * <a href="#ancora-progettazione">Progettazione</a>
  
 __________________________________________________________________________________
@@ -80,6 +79,18 @@ In questo caso, a differenza del nodo master, non abbiamo la saponetta Wi-Fi, pe
 In questo caso è la pila al litio che fornisce energia al sistema e il pannello solare fornisce energia alla batteria.
 Grazie all'ausilio del modulo TP4056 è possibile ricaricare la pila tramite il pannello solare.
 Un alzatore di tensione collaga il circuito di alimentazione alla Raspberry fornedoli esattamente 5v(tensione di lavoro della scheda).
+
+<br>
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/asd.jpg"/>
+Come possiamo vedere dall'immagine, il pannello solare ricarica la pila al litio, la pila al litio alimenta il nodo attraverso un'alzatore di tensione(voltage booster): portando la tensione da 3.7V a 5V.<br>
+Questo fa si che ogni nodo abbiamo una propria alimentazione e che sia autonomo.<br>
+Bisogna stare attenti sui voltaggi e gli amperaggi forniti dal pannello solare e dalla pila.
+Una Raspberry Pi 3 assorbe, in norma, 800mAh, quindi preleverà dalla pila al litio 800mA ogni ora.
+Una pila, in media(considerando quelle degli smartphone), ha una durata di 1-2 giorni, considerando questi tipi di consumi.
+Il pannello solare deve fornire una giusta dose di energia per far si che la pila non si scarichi mai del tutto e possa sempre alimentare, in modo costante, il nodo.
+Può capitare che in un giorno non ci sia sole a sufficienza da produrre la giusta dose di energia per la pila, ma questo non fermerà il nodo perchè ha una propria autonomia grazie alla pila che regge almeno 1-2 giorni.
+Il problema si viene a creare quando i giorni di assenza di sole sono molti di più... ma vedremo di risolvere tale problema con una pila più grande.
+Parleremo di questa problematica più in la...
 
 ### <a name="ancora-comunicazione_nodi"></a> 5. Comunicazione Nodi
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/comunicazione.png"/>
@@ -145,29 +156,17 @@ Questa trappola creerà una comunicazione su quello che sta accadendo:
 le trappole cattureranno una certa quantità di mosche, le fotocamere delle raspberry puntano su tali trappole e scatteranno delle foto che verranno successivamente elaborate per garantire un'azione tempestiva da parte dell'agricoltore(qual'ora ci fosse bisogno).
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Mappe/mappa_uliveto_divisa_contrappole.png"/>
 
-### <a name="ancora-fase4"></a> Fase 4 - Alimentazione
-<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/asd.jpg"/>
-Come possiamo vedere dall'immagine, il pannello solare ricarica la pila al litio, la pila al litio alimenta il nodo attraverso un'alzatore di tensione(voltage booster): portando la tensione da 3.7V a 5V.<br>
-Questo fa si che ogni nodo abbiamo una propria alimentazione e che sia autonomo.<br>
-Bisogna stare attenti sui voltaggi e gli amperaggi forniti dal pannello solare e dalla pila.
-Una Raspberry Pi 3 assorbe, in norma, 800mAh, quindi preleverà dalla pila al litio 800mA ogni ora.
-Una pila, in media(considerando quelle degli smartphone), ha una durata di 1-2 giorni, considerando questi tipi di consumi.
-Il pannello solare deve fornire una giusta dose di energia per far si che la pila non si scarichi mai del tutto e possa sempre alimentare, in modo costante, il nodo.
-Può capitare che in un giorno non ci sia sole a sufficienza da produrre la giusta dose di energia per la pila, ma questo non fermerà il nodo perchè ha una propria autonomia grazie alla pila che regge almeno 1-2 giorni.
-Il problema si viene a creare quando i giorni di assenza di sole sono molti di più... ma vedremo di risolvere tale problema con una pila più grande.
-Parleremo di questa problematica più in la...
-
-### <a name="ancora-fase5"></a> Fase 5 - Elaborazione Immagini
+### <a name="ancora-fase4"></a> Fase 4 - Elaborazione Immagini
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Componenti/raspberry_con_camera.jpg"/>
 La fotocamera posta su Raspberry catturerà le immagini nell'arco della giornata e le elaborerà attraverso la librearia OpenCV.
 <a href="https://opencv.org/"><img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/opencv_logo.png"/></a>
 
-### <a name="ancora-fase6"></a> Fase 6 - Acquisizione dati
+### <a name="ancora-fase5"></a> Fase 5 - Acquisizione dati
 Una volta acquisiti i dati, inerenti all'elaborazione dell'immagini, questi verranno inviati sul cloud attraverso un collegamento Wi-Fi con una saponetta 3G/4G.
 Prima di questo, se l'immagine elaborata è presente su un nodo slave, i dati verranno mandati sul nodo master, sarà quest'ultimo ad inoltrarli sul cloud.
 Le comunicazioni fra i nodi slave e master avviene in modalità wirless con le Apio DONGLE.
 
-### <a name="ancora-fase7"></a> Fase 7 - Transumanza dati sul cloud
+### <a name="ancora-fase6"></a> Fase 6 - Transumanza dati sul cloud
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/cloud.png"/>
 I dati verranno mandati al cloud dal nodo master attarverso una comunicazione senza fili.
 
