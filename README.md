@@ -189,6 +189,8 @@ In questa fase descriveremo passo passo tutte le fasi di progettazione sia hardw
 #### *A cura di Pietro Rignanese*
 Prima di passare alla progettazione, ricordiamo le fasi per inizailizzare Raspberry. Trovate tutto su questo [Link](https://github.com/FliesFree/FliesFree/blob/master/Inizializzazione_Raspberry_Pi_3.md)
 
+________________________________________________________________________________________________________________________
+
 ### *Progettazione Web-Database-Sicurezza*
 #### *A cura di Andrea Polenta*
 __________________________________________________________________________
