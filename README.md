@@ -1,9 +1,13 @@
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/flies_free_logo.png"/>
 
 Questo progetto vede la realizzazione di un prototipo(tutto automatizzato) per prevenerire tempestivamente l'attacco delle mosche in un uliveto.<br><br>
-Nel [link seguente](http://www.pithecusa.com/hobby/ortofrutteo/Nemici/le_tre_mosche.htm) troverete una piccola spiegazione sui tre tipi di mosche più diffuse nel nostro territorio e tra queste la mosca dell'olivo
+Nel [link seguente](http://www.pithecusa.com/hobby/ortofrutteo/Nemici/le_tre_mosche.htm) troverete una piccola spiegazione sui tre tipi di mosche più diffuse nel nostro territorio e tra queste la mosca dell'olivo.
+<br>
+Il progetto verrà diviso in due parti:
+* Realizzazione hardware e software del prototipo
+* Realizzazione della parte di front-end e back-end del software per la gestione dei dati e comunicazione con l'utente
 
-<br><br>
+<br>
 
 D'ora in poi chiameremo il nostro prototipo, per semplicità FFS(FliesFreeShield).
 
