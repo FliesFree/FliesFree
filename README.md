@@ -28,7 +28,7 @@ __________________________________________________________________
   * <a href="#ancora-fase4">Fase 4 - Alloggio FFS</a>
   * <a href="#ancora-fase5">Fase 5 - Elaborazione immagini</a>
   * <a href="#ancora-fase6">Fase 6 - Acquisizione dati</a>
-  * <a href="#ancora-fase7">Fase 7 - Transumanza dei dati sul Cloud</a>
+  * <a href="#ancora-fase7">Fase 7 - Comunicazione con l'utente</a>
 * <a href="#ancora-progettazione">Progettazione</a>
  
 __________________________________________________________________________________
@@ -178,9 +178,8 @@ Una volta acquisiti i dati, inerenti all'elaborazione dell'immagini, questi verr
 Prima di questo, se l'immagine elaborata è presente su un nodo slave, i dati verranno mandati sul nodo master, sarà quest'ultimo ad inoltrarli sul cloud.
 Le comunicazioni fra i nodi slave e master avviene in modalità wirless con le Apio DONGLE.
 
-### <a name="ancora-fase7"></a> Fase 7 - Transumanza dati sul cloud
-<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/cloud.png"/>
-I dati verranno mandati al cloud dal nodo master attarverso una comunicazione senza fili.
+### <a name="ancora-fase7"></a> Fase 7 - Comunicazione con l'utente
+I dati mandati sul cloud saranno presentati all'utente attraverso una Web App e/o un'App per smartphone
 
 __________________________________________________________________________
 
