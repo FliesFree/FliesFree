@@ -184,7 +184,13 @@ I dati mandati sul cloud saranno presentati all'utente attraverso una Web App e/
 __________________________________________________________________________
 
 ## <a name="ancora-progettazione"></a> Progettazione
-In questa fase descriveremo passo passo tutte le fasi di progettazione sia hardware che software.
+In questa fase descriveremo passo passo tutte le fasi di progettazione sia hardware che software.<br>
+### *Progettazione Raspberry-Image Processing-Acquisizioni Dati-Porting*
+#### *A cura di Pietro Rignanese*
+Prima di passare alla progettazione, ricordiamo le fasi per inizailizzare Raspberry. Trovate tutto su questo [Link](https://github.com/FliesFree/FliesFree/blob/master/Inizializzazione_Raspberry_Pi_3.md)
+
+### *Progettazione Web-Database-Sicurezza*
+#### *A cura di Andrea Polenta*
 __________________________________________________________________________
 
 ## <a name="ancora-indice"></a> Torna all'indice
