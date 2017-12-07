@@ -54,3 +54,18 @@ Per far partire la prima volta Raspberry, ci sono vari modi, vi elenco quelli pi
      * Potete passare alla configurazione
      <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Screen/screen_raspberry_home.png"/><br>
   
+Per il porogetto si è utilizzato sia il Metodo 2 che il Metodo 3.
+Il Metrodo 2 lo abbiamo utilizzato per accedere a Raspberry e acceder alla configurazione per accedere alla rete Wi-Fi.
+Fatto l'accesso siamo passati al Metodo 3.<br>
+
+## 3. Configurazione Ambiente Raspberry
+Appena effettuate l'accesso a Raspberry, accedete alla configurazione attraverso il comando: 'raspi-config'<br>
+* Accedete al terminale
+* Digitate 'sudo raspi-config'
+* Si aprirà la configurazione di Raspberry<br>
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Screen/screen_raspberry_config.png"/><br>
+* Accedete a NetworkOptions
+* Inserite l'SSID della rete al quale volete connettervi e la password
+* Abilitate la camera per poterla utilizzare in un secondo momento
+* Se non effettua il reboot fatelo voi con il comando 'sudo reboot'
+* La vostra Raspberry si collegherà sempre a quella rete Wi-Fi, quindi potete disconnettere il cavo LAN da router
