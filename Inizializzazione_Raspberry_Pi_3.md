@@ -28,4 +28,29 @@ Per far partire la prima volta Raspberry, ci sono vari modi, vi elenco quelli pi
    * Dovrete inserire un rang di indirizzi IP per cercare tutti gli IP dei dispositivi connessi(es: 192.168.0.1 - 192.168.0.255)
    * Se non sapete quali range di IP inserire andate sul terminale e digitate ipconfig, troverete il Gatewey di rete che sarà il vostro indirizzo di partenza
    * Una volta trovato l'indirizzo IP di Raspberry possiamo accedervi attraverso Putty
+ <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Screen/screen_putty_accesso.png"/><br>
+ 
+   * Inserite l'IP del Raspberry e premete invio
+   * Vi chiederà di inserire le credenziali:
+     * Username:ip
+     * Password:raspberry
+   * Siete dentro Raspberry!   
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Screen/screen_putty_raspberry.png"/><br>
+
+    * Adesso potete passare alla configurazione
+  
+ * Metodo 3(Metodo [VNC](https://it.wikipedia.org/wiki/Virtual_Network_Computing)):
+   * Scaricate [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)
+   * Collegate Raspberry al router tramite cavo ethernet(siete obblogati alla prima partenza)
+   * Accedete al router o tramite ip scanner trovate l'IP di Raspberry
+   * Una volta trovato l'indirizzo IP di Raspberry, aprite VNC Viewer
+   <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Screen/screen_vnc.png"/><br>
+     * Inserite l'IP di Raspberry
+     * Vi chiederà Username e Password:
+       * Username:pi
+       * Password:raspberry<br>
+       <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Screen/screen_vnc_accesso.png"/><br>
+     * Siete dentro Raspberry
+     * Potete passare alla configurazione
+     <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Screen/screen_raspberry_home.png"/><br>
   
