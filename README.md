@@ -242,7 +242,7 @@ Questa tecnica è chiamata *Machine Learning*, ovvero alleno l'algoritmo a ricon
 Più oggetti di riferimento li diamo, più preciso sarà il ritrovamento.<br>
 Nel nostro caso, abbiamo testato l'algoritmo cercando su un cartoncino una serie di cerchi e ovali colorati...
 L'algoritmo funziona! Perchè scarta le forme più grandi e quelle non piene.<br>
-A questo [link](https://docs.opencv.org/master/d2/d96/tutorial_py_table_of_contents_imgproc.html) di OpenCV sono presenti tutti i tipi di algoritmo di ricerca, saturazione, esposizione e altro... in base al tipo di lavoro da fare sull'immagine, verrà scelto un algoritmo al posto di un altro.<br>
+A questo [Link](https://docs.opencv.org/master/d2/d96/tutorial_py_table_of_contents_imgproc.html) di OpenCV sono presenti tutti i tipi di algoritmo di ricerca, saturazione, esposizione e altro... in base al tipo di lavoro da fare sull'immagine, verrà scelto un algoritmo al posto di un altro.<br>
 
 ##### <a name="ancora-prova2"></a> *Prova 2: Invio dati dul DB*
 
