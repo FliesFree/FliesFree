@@ -30,6 +30,9 @@ __________________________________________________________________
   * <a href="#ancora-fase6">Fase 6 - Acquisizione dati</a>
   * <a href="#ancora-fase7">Fase 7 - Comunicazione con l'utente</a>
 * <a href="#ancora-progettazione">Progettazione</a>
+  * <a href="#ancora-prog_1">Progettazione Raspberry-Image Processing-Acquisizioni Dati-Porting</a>
+    * <a href="#ancora-prova1">Prova1:Acquisizione foto e Image Processing</a>
+  * <a href="#ancora-prog_2">Progettazione Web-Database-Sicurezza</a>
  
 __________________________________________________________________________________
 
@@ -187,7 +190,7 @@ __________________________________________________________________________
 In questa fase descriveremo passo passo tutte le fasi di progettazione sia hardware che software.<br>
 
 _____________________________________________________________________________
-### *Progettazione Raspberry-Image Processing-Acquisizioni Dati-Porting*
+### <a name="ancora-prog_1"></a> *1) Progettazione Raspberry-Image Processing-Acquisizioni Dati-Porting*
 #### *A cura di Pietro Rignanese*
 Prima di passare alla progettazione, ricordiamo le fasi per inizailizzare Raspberry. Trovate tutto su questo [Link](https://github.com/FliesFree/FliesFree/blob/master/Inizializzazione_Raspberry_Pi_3.md)
 <br>
@@ -195,13 +198,13 @@ Una volta inizializzato Raspberry e collegato alla rete, si può partire a proge
 Dividiamo questa fase di progettazione in *Prove*, dove andremo a descrivere passo passo come realizzzare un prototipo in grado di scattare foto, elaborare l'immagine e inviarle sul server.
 Tutte queste fasi verranno parcellizzate, in modo da facilitare la realizzazione del prototipo.
 <br>
-##### *Prova 1: Acquisizione immagine e image processing*
+##### <a name="ancora-prova1"></a> *Prova 1: Acquisizione immagine e image processing*
 Partiamo con la prima prova, in cui effettuaiamo una foto e un'elaborazione dell'immagine, in modo da trovare in essa una o più figure cercate(nel nostro cado mosche, ma per il test ci limitiamo a delle forme disegnate a penna su un semplice cartoncino).<br>
 
 
 ________________________________________________________________________________________________________________________
 
-### *Progettazione Web-Database-Sicurezza*
+### <a name="ancora-prog_2"></a> *2) Progettazione Web-Database-Sicurezza*
 #### *A cura di Andrea Polenta*
 __________________________________________________________________________
 
