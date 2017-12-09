@@ -185,9 +185,19 @@ __________________________________________________________________________
 
 ## <a name="ancora-progettazione"></a> Progettazione
 In questa fase descriveremo passo passo tutte le fasi di progettazione sia hardware che software.<br>
+
+_____________________________________________________________________________
 ### *Progettazione Raspberry-Image Processing-Acquisizioni Dati-Porting*
 #### *A cura di Pietro Rignanese*
 Prima di passare alla progettazione, ricordiamo le fasi per inizailizzare Raspberry. Trovate tutto su questo [Link](https://github.com/FliesFree/FliesFree/blob/master/Inizializzazione_Raspberry_Pi_3.md)
+<br>
+Una volta inizializzato Raspberry e collegato alla rete, si può partire a progettare...<br>
+Dividiamo questa fase di progettazione in *Prove*, dove andremo a descrivere passo passo come realizzzare un prototipo in grado di scattare foto, elaborare l'immagine e inviarle sul server.
+Tutte queste fasi verranno parcellizzate, in modo da facilitare la realizzazione del prototipo.
+<br>
+##### *Prova 1: Acquisizione immagine e image processing*
+Partiamo con la prima prova, in cui effettuaiamo una foto e un'elaborazione dell'immagine, in modo da trovare in essa una o più figure cercate(nel nostro cado mosche, ma per il test ci limitiamo a delle forme disegnate a penna su un semplice cartoncino).<br>
+
 
 ________________________________________________________________________________________________________________________
 
