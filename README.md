@@ -213,7 +213,18 @@ Seguiamo questi semplici passi:
   * Slot di collegamento PiCamera non chiuso<br>
  Soluzione:
   * La sottoalimentazione si risolve collegando Raspberry con l'alimentatore di almeno 2A
-  * Lo slot dove avete collegato la PiCamera dovete farlo scattare una volta inserita la camera
+  * Lo slot dove avete collegato la PiCamera dovete farlo scattare una volta inserita la camera<br>
+  
+Una volta fatto tutto e testata la camera, possiamo passare a programmare in Python.<br>
+Nella reposity è presente una cartella 'Programma_Prova1_Raspberry' dove all'interno sono presenti i codici da eseguire in python per scattare foto ed elaborare immagini... ma andiamo per gradi...<br>
+Scaricate la reposity di GitHub e copiate all'interno della vostra Raspberry la cartella enunciata poco fa, anche sulla home va bene, l'importante è eseguire lo script di codice "main.py".
+Come potete vedere nella cartella sono presenti diversi file, ognuno di questi ha al suo interno una o più funzioni che vengono richiamate dal main.
+Il file "cattura_immagine.py" ha al suo intreno una fnzione che acquisisce una foto attraverso la camera.
+<br>
+"data_ora.py" ha diverse funzione che gestiscono la data e l'ora attuale: queste funzioni saranno dispensabili per poter salvare le foto scattate e archiviarle per data e ora.<br>
+"elabora_immagine.py" è il file che contiene al suo interno due funzioni: la prima visualizza l'immagine  aschermo e la seconda è quella riservata all'image processing e sarà quella che spiegheremo nel maggior dettaglio.<br>
+"main.py" è una file che richiama gli altri file e le loro funzioni, in modo da avere un codice più pulito e più facile da modificare in futuro.<br>
+
 
 
 ________________________________________________________________________________________________________________________
