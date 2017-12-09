@@ -32,6 +32,7 @@ __________________________________________________________________
 * <a href="#ancora-progettazione">Progettazione</a>
   * <a href="#ancora-prog_1">Progettazione Raspberry-Image Processing-Acquisizioni Dati-Porting</a>
     * <a href="#ancora-prova1">Prova1:Acquisizione foto e Image Processing</a>
+    * <a href="#ancora-prova2">Prova2:Invio dati sul DB</a>
   * <a href="#ancora-prog_2">Progettazione Web-Database-Sicurezza</a>
  
 __________________________________________________________________________________
@@ -224,6 +225,25 @@ Il file "cattura_immagine.py" ha al suo intreno una fnzione che acquisisce una f
 "data_ora.py" ha diverse funzione che gestiscono la data e l'ora attuale: queste funzioni saranno dispensabili per poter salvare le foto scattate e archiviarle per data e ora.<br>
 "elabora_immagine.py" è il file che contiene al suo interno due funzioni: la prima visualizza l'immagine  aschermo e la seconda è quella riservata all'image processing e sarà quella che spiegheremo nel maggior dettaglio.<br>
 "main.py" è una file che richiama gli altri file e le loro funzioni, in modo da avere un codice più pulito e più facile da modificare in futuro.<br>
+
+*Image Processing:*<br>
+Per poter effettuare l'image processing di un'immagine si utilizzano le librerie di OpenCV.<br>
+Per poterle utilizzare dovete installarle sul vostro Raspberry da riga di comando: 'sudo apt-get install python-picamera python3-picamera python-rpi.gpio' e 'sudo apt-get install python-opencv'.<br>
+<br>
+*In che modo avviene il ritrovamento di una forma o figura all'interno di una foto scattata?*<br>
+Avviene in 3 Fasi:
+  * *Fase di Detection*:si individuano i punti in cui sono presenti dei tratti caratteristici dell'immagine da trovare
+  * *Fase di Extraction*:estraggo dei vettori n-dimensionali che descrivano ogni punto trovato
+  * *Fase di Matching*:si confrontano gli spazi di n-dimensioni trovati tra l'immagine scattata ed una campione, in modo da vedere la corrispondenza.<br>
+Queste 3 fasi sono consecutive e fanno si che dall'immagine scattata si possa evidenziare una forma o un oggetto da trovare.
+Nel nostro caso, vogliamo trovare un particolare tipo di mosca e quindi li diamo come immagine campione(che verranno confrontate con l'immagine scattata) la mosca da trocare in tutte le possibili posizioni e angolazioni... l'algoritmo prevederà al resto...<br>
+Questa tecnica è chiamata *Machine Learning*, ovvero alleno l'algoritmo a riconoscere un'oggetto dandogli un'oggetto di riferimento.
+Più oggetti di riferimento li diamo, più preciso sarà il ritrovamento.<br>
+Nel nostro caso, abbiamo testato l'algoritmo cercando su un cartoncino una serie di cerchi e ovali colorati...
+L'algoritmo funziona! Perchè scarta le forme più grandi e quelle non piene.<br>
+A questo [link](https://docs.opencv.org/master/d2/d96/tutorial_py_table_of_contents_imgproc.html) di OpenCV sono presenti tutti i tipi di algoritmo di ricerca, saturazione, esposizione e altro... in base al tipo di lavoro da fare sull'immagine, verrà scelto un algoritmo al posto di un altro.<br>
+
+##### <a name="ancora-prova2"></a> *Prova 2: Invio dati dul DB*
 
 
 
