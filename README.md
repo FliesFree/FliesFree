@@ -234,7 +234,8 @@ Per poterle utilizzare dovete installarle sul vostro Raspberry da riga di comand
 Avviene in 3 Fasi:
   * *Fase di Detection*:si individuano i punti in cui sono presenti dei tratti caratteristici dell'immagine da trovare
   * *Fase di Extraction*:estraggo dei vettori n-dimensionali che descrivano ogni punto trovato
-  * *Fase di Matching*:si confrontano gli spazi di n-dimensioni trovati tra l'immagine scattata ed una campione, in modo da vedere la corrispondenza.<br>
+  * *Fase di Matching*:si confrontano gli spazi di n-dimensioni trovati tra l'immagine scattata ed una campione, in modo da vedere la corrispondenza.
+  <br>
 Queste 3 fasi sono consecutive e fanno si che dall'immagine scattata si possa evidenziare una forma o un oggetto da trovare.
 Nel nostro caso, vogliamo trovare un particolare tipo di mosca e quindi li diamo come immagine campione(che verranno confrontate con l'immagine scattata) la mosca da trocare in tutte le possibili posizioni e angolazioni... l'algoritmo prevederà al resto...<br>
 Questa tecnica è chiamata *Machine Learning*, ovvero alleno l'algoritmo a riconoscere un'oggetto dandogli un'oggetto di riferimento.
