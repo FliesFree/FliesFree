@@ -200,6 +200,20 @@ Tutte queste fasi verranno parcellizzate, in modo da facilitare la realizzazione
 <br>
 ##### <a name="ancora-prova1"></a> *Prova 1: Acquisizione immagine e image processing*
 Partiamo con la prima prova, in cui effettuaiamo una foto e un'elaborazione dell'immagine, in modo da trovare in essa una o più figure cercate(nel nostro cado mosche, ma per il test ci limitiamo a delle forme disegnate a penna su un semplice cartoncino).<br>
+<br>
+*Acquisizione Immagine:*<br>
+Per poter acquisire un'immagine si deve verificare prima il funzionamento della PiCamera connessa a Raspberry.
+Seguiamo questi semplici passi:
+* Collegare la PiCamera nell'apposito slot facendo attenzione di collegarlo nel modo giusto e nel giusto verso
+* Se avete seguito la guida prima di partire con la progettazione, allora avete abilitato anche la camera, altrimenti dovete abilitarla digitando da riga di comando 'sudo raspi-config' e andare nella sezione 'camera'
+* Testiamo il funzionamento della PiCamera digitando 'sudo raspistill -v -o acquisizione.jpg'
+* Se tutto è a posto la Raspberry scatterà una foto e vi mostrerà una preview della foto
+* Se si verificano dei problemi tipo "No data received from sensor. Check all connections, including the Sunny one on the camera board" potrebbe dipendere da diversi fattori:
+  * Sottoalimentazione della scheda
+  * Slot di collegamento PiCamera non chiuso<br>
+ Soluzione:
+  * La sottoalimentazione si risolve collegando Raspberry con l'alimentatore di almeno 2A
+  * Lo slot dove avete collegato la PiCamera dovete farlo scattare una volta inserita la camera
 
 
 ________________________________________________________________________________________________________________________
