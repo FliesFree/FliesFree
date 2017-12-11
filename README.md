@@ -244,8 +244,8 @@ Nel nostro caso, abbiamo testato l'algoritmo cercando su un cartoncino una serie
 L'algoritmo funziona! Perchè scarta le forme più grandi e quelle non piene.<br>
 A questo [Link](https://docs.opencv.org/master/d2/d96/tutorial_py_table_of_contents_imgproc.html) di OpenCV sono presenti tutti i tipi di algoritmo di ricerca, saturazione, esposizione e altro... in base al tipo di lavoro da fare sull'immagine, verrà scelto un algoritmo al posto di un altro.<br>
 Nel nostro caso abbiamo 2 cartelle che vengono usate per elaborare l'algoritmo:
- * Directory 'Mosche': Contiene le immagini di mosche che verranno usate come campione per il confronto
- * Directory 'Trappole': Contiene le immagine delle trappole scatate volta per volta e catalogate per data e ora
+  * Directory 'Mosche': Contiene le immagini di mosche che verranno usate come campione per il confronto
+  * Directory 'Trappole': Contiene le immagine delle trappole scatate volta per volta e catalogate per data e ora
  <br>
  
 
