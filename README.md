@@ -33,6 +33,7 @@ __________________________________________________________________
   * <a href="#ancora-prog_1">Progettazione Raspberry-Image Processing-Acquisizioni Dati-Porting</a>
     * <a href="#ancora-prova1">Prova1:Acquisizione foto e Image Processing</a>
     * <a href="#ancora-prova2">Prova2:Invio dati sul DB</a>
+    * <a href="#ancora-prova3">Prova3:Comunicazione tra nodi</a>
   * <a href="#ancora-prog_2">Progettazione Web-Database-Sicurezza</a>
  
 __________________________________________________________________________________
@@ -254,6 +255,10 @@ Nel nostro caso abbiamo 2 cartelle che vengono usate per elaborare l'algoritmo:
 ##### <a name="ancora-prova2"></a> *Prova 2: Invio dati dul DB*
 Prima di procedere con la Prova2, si devono apposrtare delle installazioni di ulteriori librerie e programmi...
 Basta seguire la nostra [Guida](https://github.com/FliesFree/FliesFree/blob/master/Postgresql_Raspian_Python.md)
+
+
+
+##### <a name="ancora-prova3"></a> *Prova 3: Comunicazione tra nodi*
 
 
 
