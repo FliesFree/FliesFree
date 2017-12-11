@@ -34,3 +34,23 @@ Adesso vedrete su schermo il server creato e il database al suo interno.
 All'interno del DB ci sono le tabelle e quello inserito al suo interno.
 
 
+## Comunicazione con Postgresql da Python
+
+Ecco un piccolo script di codice che si può eseguire da Python:
+
+*import psycopg2*
+
+*conn = psycopg2.connect('dbname=test')*<br>
+*cur = conn.cursor()*
+
+*cur.execute('select * from people')*
+
+*results = cur.fetchall()*
+
+*for result in results:*<br>
+    *print(result)*
+    
+    
+<br>
+Trovate altir esempi di comunicazione a questo [sito](https://pythonspot.com/python-database-postgresql/)
+
