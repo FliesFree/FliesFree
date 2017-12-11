@@ -227,6 +227,9 @@ Il file "cattura_immagine.py" ha al suo intreno una fnzione che acquisisce una f
 "elabora_immagine.py" è il file che contiene al suo interno due funzioni: la prima visualizza l'immagine  aschermo e la seconda è quella riservata all'image processing e sarà quella che spiegheremo nel maggior dettaglio.<br>
 "main.py" è una file che richiama gli altri file e le loro funzioni, in modo da avere un codice più pulito e più facile da modificare in futuro.<br>
 
+Esempio di acquisizione immagine:
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Esempi/2017_12_11_9.jpg"/>
+
 *Image Processing:*<br>
 Per poter effettuare l'image processing di un'immagine si utilizzano le librerie di OpenCV.<br>
 Per poterle utilizzare dovete installarle sul vostro Raspberry da riga di comando: 'sudo apt-get install python-picamera python3-picamera python-rpi.gpio' e 'sudo apt-get install python-opencv'.<br>
@@ -249,6 +252,10 @@ Nel nostro caso abbiamo 2 cartelle che vengono usate per elaborare l'algoritmo:
    * Directory 'Mosche': Contiene le immagini di mosche che verranno usate come campione per il confronto
    * Directory 'Trappole': Contiene le immagine delle trappole scatate volta per volta e catalogate per data e ora
   <br>
+  
+Esempio di maching e ricerca di forme dell'immagine precedente:
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Esempi/result_2017_12_11_9.png"/>
+
  
 
 
