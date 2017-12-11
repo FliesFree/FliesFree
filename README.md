@@ -252,6 +252,8 @@ Nel nostro caso abbiamo 2 cartelle che vengono usate per elaborare l'algoritmo:
 
 
 ##### <a name="ancora-prova2"></a> *Prova 2: Invio dati dul DB*
+Prima di procedere con la Prova2, si devono apposrtare delle installazioni di ulteriori librerie e programmi...
+Basta seguire la nostra [Guida](https://github.com/FliesFree/FliesFree/blob/master/Postgresql_Raspian_Python.md)
 
 
 
