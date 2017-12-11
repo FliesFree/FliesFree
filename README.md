@@ -256,6 +256,13 @@ Nel nostro caso abbiamo 2 cartelle che vengono usate per elaborare l'algoritmo:
 Esempio di maching e ricerca di forme dell'immagine precedente:
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Esempi/result_2017_12_11_9.png"/>
 
+<br>
+L'algoritmo funziona abbastanza bene, considerando il fatto che stiamo lavorando su degli scarabocchi...
+Ma scarta gli ovali più grandi, quelli vuoti e quelli di colore differente.
+Quindi l'algortitmo seleziona solo quello che ci interessa...
+<br>
+Nel nostro caso, successivamente, inseriremo come immagini campione le mosche dell'olivo, l'algoritmo penserà al resto...
+
  
 
 
