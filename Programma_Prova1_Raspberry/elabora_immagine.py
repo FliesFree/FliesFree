@@ -17,8 +17,8 @@ def visual_scatto():
 def trova_mosche():
     img_rgb = cv.imread('/home/pi/FliesFree/Prove/Prove_Python/Flies_Free_Prova1/Trappola/%s.jpg' %data_ora.data_ora_attuale())
     img_gray = cv.cvtColor(img_rgb, cv.COLOR_BGR2GRAY)
-    template1 = cv.imread('/home/pi/FliesFree/Prove/Prove_Python/Flies_Free_Prova1/Mosche/mosca6.jpg',0)
-    template2 = cv.imread('/home/pi/FliesFree/Prove/Prove_Python/Flies_Free_Prova1/Mosche/mosca7.jpg',0)
+    template1 = cv.imread('/home/pi/FliesFree/Prove/Prove_Python/Flies_Free_Prova1/Mosche/mosca1.jpg',0)
+    template2 = cv.imread('/home/pi/FliesFree/Prove/Prove_Python/Flies_Free_Prova1/Mosche/mosca2.jpg',0)
     w, h = template1.shape[::-1]
     w2, h2 = template2.shape[::-1]
     #----------Il confronto avviene su due immagini campioni----------
@@ -35,4 +35,4 @@ def trova_mosche():
         cv.rectangle(img_rgb, pt2, (pt2[0] + w2, pt2[1] + h2), (0,0,255), 1)
         
     #Viene salvata l'immagine con le relative mosche evidenziate    
-    cv.imwrite('result.png',img_rgb)
+    cv.imwrite('Risultati/result_%s.png'%data_ora.data_ora_attuale(),img_rgb)
