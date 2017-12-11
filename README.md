@@ -264,13 +264,13 @@ Quindi l'algortitmo seleziona solo quello che ci interessa...
 Nel nostro caso, successivamente, inseriremo come immagini campione le mosche dell'olivo, l'algoritmo penserà al resto...
 
  
-
+**************************************************************************
 
 ##### <a name="ancora-prova2"></a> *Prova 2: Invio dati dul DB*
 Prima di procedere con la Prova2, si devono apposrtare delle installazioni di ulteriori librerie e programmi...
 Basta seguire la nostra [Guida](https://github.com/FliesFree/FliesFree/blob/master/Postgresql_Raspian_Python.md)
 
-
+***************************************************************************
 
 ##### <a name="ancora-prova3"></a> *Prova 3: Comunicazione tra nodi*
 
