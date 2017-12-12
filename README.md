@@ -264,6 +264,7 @@ Quindi l'algortitmo seleziona solo quello che ci interessa...
 <br>
 Nel nostro caso, successivamente, inseriremo come immagini campione le mosche dell'olivo, l'algoritmo penserà al resto...
 <br>
+
 *N.B: Per contare il numero di mosche trovate all'interno della foto scattata, utilizziamo un particolare algoritmo che, in poche parole, va a contare le variazioni tra le matrici estrapolate dalle immagini confrontate. Così facendo, sampiamo sul terminale il numero esatto(o prossimo al numero esatto) di mosche che poi metteremo sul DB*
 
  
