@@ -262,6 +262,8 @@ Ma scarta gli ovali più grandi, quelli vuoti e quelli di colore differente.
 Quindi l'algortitmo seleziona solo quello che ci interessa...
 <br>
 Nel nostro caso, successivamente, inseriremo come immagini campione le mosche dell'olivo, l'algoritmo penserà al resto...
+<br>
+*N.B: Per contare il numero di mosche trovate all'interno della foto scattata, utilizziamo un particolare algoritmo che, in poche parole, va a contare le variazioni tra le matrici estrapolate dalle immagini confrontate. Così facendo, sampiamo sul terminale il numero esatto(o prossimo al numero esatto) di mosche che poi metteremo sul DB*
 
  
 **************************************************************************
@@ -270,9 +272,21 @@ Nel nostro caso, successivamente, inseriremo come immagini campione le mosche de
 Prima di procedere con la Prova2, si devono apposrtare delle installazioni di ulteriori librerie e programmi...
 Basta seguire la nostra [Guida](https://github.com/FliesFree/FliesFree/blob/master/Postgresql_Raspian_Python.md)
 
+**************************************************************************
+
+##### <a name="ancora-prova3"></a> *Prova 3: Invio dati al WebServer*
+L'invio dati sul DB serve per immagazinare i dati all'interno di raspberry, ma i dati vanno mandati ad un Web Server per poter essere analizzati e salvati in un DB sicuro.
+Questi dati  verranno inoltrati con il comando, da riga di comando, '*curl*'.
+<br>
+Possiamo avere due modalità:
+  * Tramite script python: inseriamo delle parole chiave che invieranno ed eseguiranno i comandi tramite shell(es: *call([command], shell=True)* )
+  * Tramite libreria *pycurl*: la libreria fa tutto quello che abbiamo scritto prima
+  
+A rigor di logica risulta più sicuro, intuitivo e facile adottare il secondo metodo.<br>
+
 ***************************************************************************
 
-##### <a name="ancora-prova3"></a> *Prova 3: Comunicazione tra nodi*
+##### <a name="ancora-prova4"></a> *Prova 4: Comunicazione tra nodi*
 
 
 
