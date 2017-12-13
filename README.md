@@ -193,7 +193,7 @@ In questa fase descriveremo passo passo tutte le fasi di progettazione sia hardw
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/schema_riassuntivo_finale2.png"/>
 
 _____________________________________________________________________________
-### <a name="ancora-prog_1"></a> *1) Progettazione Raspberry-Image Processing-Acquisizioni Dati-Porting-Comunicazione WebServer*
+### <a name="ancora-prog_1"></a> *1) Progettazione Raspberry-Image Processing-Acquisizioni Dati-Porting-Comunicazione WebServer-Gestione Shutdown automatizzato*
 #### *A cura di Pietro Rignanese*
 Prima di passare alla progettazione, ricordiamo le fasi per inizailizzare Raspberry. Trovate tutto su questo [Link](https://github.com/FliesFree/FliesFree/blob/master/Inizializzazione_Raspberry_Pi_3.md)
 <br>
