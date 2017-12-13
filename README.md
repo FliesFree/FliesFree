@@ -190,6 +190,7 @@ __________________________________________________________________________
 
 ## <a name="ancora-progettazione"></a> Progettazione
 In questa fase descriveremo passo passo tutte le fasi di progettazione sia hardware che software.<br>
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/schema_riassuntivo_finale2.png"/>
 
 _____________________________________________________________________________
 ### <a name="ancora-prog_1"></a> *1) Progettazione Raspberry-Image Processing-Acquisizioni Dati-Porting-Comunicazione WebServer*
