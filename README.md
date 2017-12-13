@@ -67,6 +67,7 @@ Come possiamo vedere dallo schema, il nodo master è formato da:
  * Camera per Raspberry
  * Apio DONGLE
  * Saponetta 3G/4G
+ * Temporizzatore per il <a href="#ancora-prova4">Sleep&Wake</a>
 
 La Raspberry è il cuore pulsante del nodo: cattura le immagini attraverso la telecamera, le elabora e le manda sul Cloud attraverso la saponetta Wi-Fi.
 La APIO DONGLE serve per comunicare con gli altri nodi in entrambe le direzioni.
@@ -120,11 +121,11 @@ _____________________________________________________________________________
  * Hardware:
    * Ogni nodo avrà a disposizione una trappola a feromone e la fotocamera di raspberry punterà su quest'ultima<br>
    * La raspberry per la maggiorparte del tempo sarà in "sleep" e si sveglierà solamente per scattare una foto alla trappola ed elaborare l'immagine<br>
-   * Una volta elaborata l'immagine, con degli algoritmi specifici, verranno mandati i dati relativi a quest'ultima sul cloud(nel caso del nodo master) oppure al nodo master(nel caso di nodo slave)<br>
+   * Una volta elaborata l'immagine, con degli algoritmi specifici, verranno mandati i dati relativi a quest'ultima ad un Web Server(nel caso del nodo master) oppure al nodo master(nel caso di nodo slave)<br>
    * La raspberry tornerà in fase di "sleep"<br>
    
  * Software:
-   * Il cloud riceve i dati inviati dal master e gli andrà ad archiviare in un database
+   * Il Server riceve i dati inviati dalla Raspberry(Master) e gli andrà ad archiviare in un database o in apposito spazio di storage
    * Tramite un algoritmo verranno verificati i dati mandati dal nodo master:
      * Se l'algoritmo prevede un problema su un nodo manda un segnale(SMS e/o notifica app) con il relativo problema
      * Se l'algoritmo non prevede nessun problema non viene mandato nessun riscontro
