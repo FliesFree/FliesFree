@@ -294,7 +294,9 @@ A rigor di logica risulta più sicuro, intuitivo e facile adottare il secondo me
 In questa prova vediamo come realizzare un piccolo circuito per accendeere e spegnere Raspberry in modo automatico, in determinate ore della giornata.
 Questo è stato pensato per limitare la spesa energetica... essendo tutto autoalimentato da una pila e un pannello solare, dobbiamo gestire l'energia in modo parsimonioso.
 <br>
-
+Per procedere a questo abbiamo pensato di costruire un temporizzatore in due modi differenti(poi vedremo quale dei due sarà più conveninete utilizzare):
+  * Soluzione 1 : [Realizzazione del temporizzatore tramite un modulo DS3231M di base](https://www.allaboutcircuits.com/projects/build-programmable-time-based-switches-using-a-real-time-clock/)
+  * Soluzione 2 : Realizzazione del temporizzatore tramite un modulo DS1302 e Arduino Nano
 
 ________________________________________________________________________________________________________________________
 
