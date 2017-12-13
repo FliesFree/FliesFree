@@ -32,9 +32,8 @@ __________________________________________________________________
 * <a href="#ancora-progettazione">Progettazione</a>
   * <a href="#ancora-prog_1">Progettazione Raspberry-Image Processing-Acquisizioni Dati-Porting</a>
     * <a href="#ancora-prova1">Prova1:Acquisizione foto e Image Processing</a>
-    * <a href="#ancora-prova2">Prova2:Invio dati sul DB</a>
-    * <a href="#ancora-prova3">Prova3:Invio dati al Web Server</a>
-    * <a href="#ancora-prova4">Prova4:Comunicazione tra più nodi</a>
+    * <a href="#ancora-prova2">Prova3:Invio dati al Web Server</a>
+    * <a href="#ancora-prova3">Prova4:Comunicazione tra più nodi</a>
   * <a href="#ancora-prog_2">Progettazione Web-Database-Sicurezza</a>
  
 __________________________________________________________________________________
@@ -193,7 +192,7 @@ __________________________________________________________________________
 In questa fase descriveremo passo passo tutte le fasi di progettazione sia hardware che software.<br>
 
 _____________________________________________________________________________
-### <a name="ancora-prog_1"></a> *1) Progettazione Raspberry-Image Processing-Acquisizioni Dati-Porting*
+### <a name="ancora-prog_1"></a> *1) Progettazione Raspberry-Image Processing-Acquisizioni Dati-Porting-Comunicazione WebServer*
 #### *A cura di Pietro Rignanese*
 Prima di passare alla progettazione, ricordiamo le fasi per inizailizzare Raspberry. Trovate tutto su questo [Link](https://github.com/FliesFree/FliesFree/blob/master/Inizializzazione_Raspberry_Pi_3.md)
 <br>
@@ -270,14 +269,10 @@ Nel nostro caso, successivamente, inseriremo come immagini campione le mosche de
  
 **************************************************************************
 
-##### <a name="ancora-prova2"></a> *Prova 2: Invio dati dul DB*
-Prima di procedere con la Prova2, si devono apposrtare delle installazioni di ulteriori librerie e programmi...
-Basta seguire la nostra [Guida](https://github.com/FliesFree/FliesFree/blob/master/Postgresql_Raspian_Python.md)
-
-**************************************************************************
-
-##### <a name="ancora-prova3"></a> *Prova 3: Invio dati al WebServer*
-L'invio dati sul DB serve per immagazinare i dati all'interno di raspberry, ma i dati vanno mandati ad un Web Server per poter essere analizzati e salvati in un DB sicuro.
+##### <a name="ancora-prova2"></a> *Prova 2: Invio dati al WebServer*
+Prima di procedere con la Prova2, nella reposity è presente un file dove spiega come effettuare una connessione con un database in Postgresql. Basta seguire la nostra [Guida](https://github.com/FliesFree/FliesFree/blob/master/Postgresql_Raspian_Python.md)
+<br>
+L'invio dati sul DB serve per immagazinare i dati all'interno di Raspberry(se lo si vuole aggiungere, ma Raspberry ha già una SD dove verranno immagazzinati i dati e tutte le foto scattate), ma i dati vanno mandati ad un Web Server per poter essere analizzati e salvati in un DB sicuro.
 Questi dati  verranno inoltrati con il comando, da riga di comando, '*curl*'.
 <br>
 Possiamo avere due modalità:
@@ -288,7 +283,7 @@ A rigor di logica risulta più sicuro, intuitivo e facile adottare il secondo me
 
 ***************************************************************************
 
-##### <a name="ancora-prova4"></a> *Prova 4: Comunicazione tra nodi*
+##### <a name="ancora-prova3"></a> *Prova 3: Comunicazione tra nodi*
 
 
 
