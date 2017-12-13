@@ -34,6 +34,7 @@ __________________________________________________________________
     * <a href="#ancora-prova1">Prova1:Acquisizione foto e Image Processing</a>
     * <a href="#ancora-prova2">Prova2:Invio dati al Web Server</a>
     * <a href="#ancora-prova3">Prova3:Comunicazione tra più nodi</a>
+    * <a href="#ancora-prova4">Prova4:Sleep&Wake Automatico</a>
   * <a href="#ancora-prog_2">Progettazione Web-Database-Sicurezza</a>
  
 __________________________________________________________________________________
@@ -285,6 +286,11 @@ A rigor di logica risulta più sicuro, intuitivo e facile adottare il secondo me
 ***************************************************************************
 
 ##### <a name="ancora-prova3"></a> *Prova 3: Comunicazione tra nodi*
+
+
+***************************************************************************
+
+##### <a name="ancora-prova4"></a> *Prova 4: Sleep&Wake Automatico*
 
 
 
