@@ -32,8 +32,8 @@ __________________________________________________________________
 * <a href="#ancora-progettazione">Progettazione</a>
   * <a href="#ancora-prog_1">Progettazione Raspberry-Image Processing-Acquisizioni Dati-Porting</a>
     * <a href="#ancora-prova1">Prova1:Acquisizione foto e Image Processing</a>
-    * <a href="#ancora-prova2">Prova3:Invio dati al Web Server</a>
-    * <a href="#ancora-prova3">Prova4:Comunicazione tra più nodi</a>
+    * <a href="#ancora-prova2">Prova2:Invio dati al Web Server</a>
+    * <a href="#ancora-prova3">Prova3:Comunicazione tra più nodi</a>
   * <a href="#ancora-prog_2">Progettazione Web-Database-Sicurezza</a>
  
 __________________________________________________________________________________
