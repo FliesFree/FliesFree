@@ -291,7 +291,9 @@ A rigor di logica risulta più sicuro, intuitivo e facile adottare il secondo me
 ***************************************************************************
 
 ##### <a name="ancora-prova4"></a> *Prova 4: Sleep&Wake Automatico*
-
+In questa prova vediamo come realizzare un piccolo circuito per accendeere e spegnere Raspberry in modo automatico, in determinate ore della giornata.
+Questo è stato pensato per limitare la spesa energetica... essendo tutto autoalimentato da una pila e un pannello solare, dobbiamo gestire l'energia in modo parsimonioso.
+<br>
 
 
 ________________________________________________________________________________________________________________________
