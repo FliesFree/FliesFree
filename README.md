@@ -274,7 +274,7 @@ Nel nostro caso, successivamente, inseriremo come immagini campione le mosche de
 Prima di procedere con la Prova2, nella reposity è presente un file dove spiega come effettuare una connessione con un database in Postgresql. Basta seguire la nostra [Guida](https://github.com/FliesFree/FliesFree/blob/master/Postgresql_Raspian_Python.md)
 <br>
 L'invio dati sul DB serve per immagazinare i dati all'interno di Raspberry(se lo si vuole aggiungere, ma Raspberry ha già una SD dove verranno immagazzinati i dati e tutte le foto scattate), ma i dati vanno mandati ad un Web Server per poter essere analizzati e salvati in un DB sicuro.
-Questi dati  verranno inoltrati con il comando, da riga di comando, '*curl*'.
+Questi dati  verranno inoltrati al WebServer da riga di comando ('*curl*').
 <br>
 Possiamo avere due modalità:
   * Tramite script python: inseriamo delle parole chiave che invieranno ed eseguiranno i comandi tramite shell(es: *call([command], shell=True)* )
