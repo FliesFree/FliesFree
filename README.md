@@ -330,6 +330,7 @@ Questo è stato pensato per limitare la spesa energetica... essendo tutto autoal
 <br>
 Per procedere a questo abbiamo pensato di costruire un temporizzatore in due modi differenti(poi vedremo quale dei due sarà più conveninete utilizzare):
   * Soluzione 1 : Realizzazione del temporizzatore tramite un modulo DS3231M con ALLARM
+    <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/schema%20alimentazione%20completo_sol1.png"/>
   * Soluzione 2 : Realizzazione del temporizzatore tramite un modulo DS1302 e Arduino Nano
     <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/schema%20alimentazione%20completo.png"/>
     <table align='center'>
