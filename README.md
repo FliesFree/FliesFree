@@ -295,7 +295,17 @@ Procediamo per gradi:
   * Una volta installata la libreria testiamo il suo funzionamento con:
     * '*python*'
     * '*import pycurl*'<br>
-   Se tuttp è a posto non dovremmo rilevare errori...
+   Se tutto è a posto non dovremmo rilevare errori...
+   
+  * Adesso è possibile aprire la shell alla cartella '*Programma_prova2_Raspberry*' ed eseguire il main
+ 
+Fatto questi passaggi il programma farà una foto, la elaborerà per cercare delle mosche(scarabocchi nel nostro caso) e manderà la foto
+elaborata al server attraverso un indirizzo IP(192.168.43.233 nel nostro caso).
+L'indirizzo IP rappresenta la posizione dove è stato istanziato il server...
+<br>
+Abbiamo creato un server su un PC collegato alla stessa rete del Rasp attraverso [XAMPP](https://www.apachefriends.org/it/index.html), il PC-Server ha un indirizzo IP nella rete, e questo IP sarà il punto in cui verrà inviata la foto.
+<br>
+ 
 
 ***************************************************************************
 
