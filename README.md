@@ -329,37 +329,35 @@ In questa prova vediamo come realizzare un piccolo circuito per accendeere e spe
 Questo è stato pensato per limitare la spesa energetica... essendo tutto autoalimentato da una pila e un pannello solare, dobbiamo gestire l'energia in modo parsimonioso.
 <br>
 Per procedere a questo abbiamo pensato di costruire un temporizzatore in due modi differenti(poi vedremo quale dei due sarà più conveninete utilizzare):
-  * Soluzione 1 : [Realizzazione del temporizzatore tramite un modulo DS3231M di base](https://www.allaboutcircuits.com/projects/build-programmable-time-based-switches-using-a-real-time-clock/)
+  * Soluzione 1 : Realizzazione del temporizzatore tramite un modulo DS3231M con ALLARM
   * Soluzione 2 : Realizzazione del temporizzatore tramite un modulo DS1302 e Arduino Nano
-  
-Utilizzando la soluzione 2 lo schema complessivo sarà il seguente:
-<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/schema%20alimentazione%20completo.png"/>
-<table align='center'>
-  <tr align='center'>
-   <td> </td>
-   <td>Arduino Nano</td>
-   <td>Raspberry Pi 3</td>
-   <td>Alzatore di tensione</td>
-  </tr>
-  <tr align='center'>
-   <td>Modulo RTC</td>
-   <td>RST=D2, DAT=D3, CLK=D4</td>
-   <td>CLK=Pin2, DAT=Pin5</td>
-   <td>Pila Tampone</td>
-  </tr>
- <tr align='center'>
-   <td>Arduino Nano</td>
-   <td></td>
-   <td>D12=PinGPIO_Disponibile</td>
-   <td>VCC=Out, GND=GND</td>
-  </tr>
- <tr align='center'>
-   <td>Raspberry Pi 3</td>
-  <td>PinGPIO_Disponibile=D12</td>
-  <td></td>
-  <td>Alimentatore USB=Alimentazione Booster</td>
-  </tr>
- </table>
+    <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/schema%20alimentazione%20completo.png"/>
+    <table align='center'>
+      <tr align='center'>
+       <td> </td>
+       <td>Arduino Nano</td>
+       <td>Raspberry Pi 3</td>
+       <td>Alzatore di tensione</td>
+      </tr>
+      <tr align='center'>
+       <td>Modulo RTC</td>
+       <td>RST=D2, DAT=D3, CLK=D4</td>
+       <td>CLK=Pin2, DAT=Pin5</td>
+       <td>Pila Tampone</td>
+      </tr>
+     <tr align='center'>
+       <td>Arduino Nano</td>
+       <td></td>
+       <td>D12=PinGPIO_Disponibile</td>
+       <td>VCC=Out, GND=GND</td>
+      </tr>
+     <tr align='center'>
+       <td>Raspberry Pi 3</td>
+      <td>PinGPIO_Disponibile=D12</td>
+      <td></td>
+      <td>Alimentatore USB=Alimentazione Booster</td>
+      </tr>
+     </table>
  
  Come possiamo vedere distinguiamo due tipi di alimentazioni indipendenti:
    * Alimentazione solare: che alimenta Raspberry attraverso un modulo TP4056 e un Voltage Booster(3.7v to 5v)
