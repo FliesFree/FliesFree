@@ -387,6 +387,8 @@ Per procedere a questo abbiamo pensato di costruire un temporizzatore in due mod
       <td>Alimentatore USB=Alimentazione Booster</td>
       </tr>
      </table>
+     
+ *N.B:I due schemi hanno come prima differenza evidente il modulo RTC usato... infatti nel primo schema abbiamo un DS3231 che ha un pin per l'allarme e possiamo utilizzare per mandare un impulso per far scattare il BJT e accendere Rasp, il secondo schema ha un semplice RTC DS1302 che non possiede un allarme e quindi per poterlo adattare ha bisogno di un Arduino Nano.*
  
  Come possiamo vedere distinguiamo due tipi di alimentazioni indipendenti:
    * Alimentazione solare: che alimenta Raspberry attraverso un modulo TP4056 e un Voltage Booster(3.7v to 5v)
