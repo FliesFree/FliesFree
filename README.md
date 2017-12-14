@@ -290,7 +290,12 @@ Una volta che il programma è in esecuzione effettuerà il suo lavoro e verifich
 <br>
 La parte del server web è stata strutturata e creata appositamente da [Andrea Polenta](https://github.com/poly94) per questo test.<br>
 Procediamo per gradi:
-
+  * Installiamo la libreria di [PycURL](http://pycurl.io/)
+  * Digitiamo il comando: *'sudo apt-get install python-pycurl'*
+  * Una volta installata la libreria testiamo il suo funzionamento con:
+    * '*python*'
+    * '*import pycurl*'<br>
+   Se tuttp è a posto non dovremmo rilevare errori...
 
 ***************************************************************************
 
