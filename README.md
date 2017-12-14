@@ -303,9 +303,13 @@ Fatto questi passaggi il programma farà una foto, la elaborerà per cercare del
 elaborata al server attraverso un indirizzo IP(192.168.43.233 nel nostro caso).
 L'indirizzo IP rappresenta la posizione dove è stato istanziato il server...
 <br>
-Abbiamo creato un server su un PC collegato alla stessa rete del Rasp attraverso [XAMPP](https://www.apachefriends.org/it/index.html), il PC-Server ha un indirizzo IP nella rete, e questo IP sarà il punto in cui verrà inviata la foto.
+Abbiamo creato un server su un PC collegato alla stessa rete del Rasp attraverso [XAMPP](https://www.apachefriends.org/it/index.html), il PC-Server ha un indirizzo IP nella rete, e questo IP sarà l'URL in cui verrà inviata la foto.
 <br>
- 
+Ricapitolando:
+  * Il PC che funge da server verrà inizializzato con XAMPP
+  * All'interno della cartella 'htdocs', ovvero la certella dove XAMPP inizia il suo percorso di server, inseriamo il programma lato server che preleverà l'immagine inviata e l'andrà a mettere in un'apposita cartella chiamata 'uploads':
+  * La Raspberry avrà il suo programma in Python che invierà la foto all'indirizzo IP del PC-Server
+  
 
 ***************************************************************************
 
