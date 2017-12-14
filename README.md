@@ -327,7 +327,14 @@ Utilizzando la soluzione 2 lo schema complessivo sarà il seguente:
   <td>Alimentatore USB=Alimentazione Booster</td>
   </tr>
  </table>
-
+ 
+ Come possiamo vedere distinguiamo due tipi di alimentazioni indipendenti:
+   * Alimentazione solare: che alimenta Raspberry attraverso un modulo TP4056 e un Voltage Booster(3.7v to 5v)
+   * Alimentazione a pila tampone(Pila RTC): che alimenta il modulo RTC e Arduino Nano con un Voltage Booster
+   
+ Infine il pin digitale di Arduino Nano è collegato alla base del BJT che darà l'impulso per far accendere Raspberry all'ora desiderata.
+ A Raspberry basta un piccolo impulso per accendersi e far partire il suo codice che scatterà la foto, elaborerà l'immagine e invierà tutto al web server.
+Infatti il BJT crea un cortocircuito del "P6 Reset", nonchè due connettori di Raspberry che fanno svegliare o riavviare la rasp appena il circuito si chiude.
 ________________________________________________________________________________________________________________________
 
 ### <a name="ancora-prog_2"></a> *2) Progettazione Web-Database-Sicurezza*
