@@ -310,6 +310,12 @@ Ricapitolando:
   * All'interno della cartella 'htdocs', ovvero la certella dove XAMPP inizia il suo percorso di server, inseriamo il programma lato server che preleverà l'immagine inviata e l'andrà a mettere in un'apposita cartella chiamata 'uploads':
   * La Raspberry avrà il suo programma in Python che invierà la foto all'indirizzo IP del PC-Server
   
+  <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Screen/screen_xampp.png"/>
+  
+  <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Screen/screen_xampp_img.png"/>
+  
+  *N.B:Possiamo accedere da qualsiasi host posizionato nella stessa rete del server per verificare il contenuto della cartella e le foto annesse... basta aprire il browser web e digitare l'IP del PC-Server.*
+  
 
 ***************************************************************************
 
