@@ -284,6 +284,14 @@ Possiamo avere due modalità:
   
 A rigor di logica risulta più sicuro, intuitivo e facile adottare il secondo metodo.<br>
 
+Nella directory *Programma_Prova2_Raspberry* è presente l'intero programma che scatta la foto, elabora l'immagine e invia la foto elaborata al web server.
+Questo programma verrà eseguito da Raspberry facendolo partire con il comando *'python main.py'*<br>
+Una volta che il programma è in esecuzione effettuerà il suo lavoro e verificheremo quello che sta facendo dalla shell di Rasp... quando avrà completato l'operazione la nostra foto dovrà essere presente nella directory dove è stata mandata dal server web.
+<br>
+La parte del server web è stata strutturata e creata appositamente da [Andrea Polenta](https://github.com/poly94) per questo test.<br>
+Procediamo per gradi:
+
+
 ***************************************************************************
 
 ##### <a name="ancora-prova3"></a> *Prova 3: Comunicazione tra nodi*
