@@ -307,7 +307,7 @@ Abbiamo creato un server su un PC collegato alla stessa rete del Rasp attraverso
 <br>
 Ricapitolando:
   * Il PC che funge da server verrà inizializzato con XAMPP
-  * All'interno della cartella 'htdocs', ovvero la certella dove XAMPP inizia il suo percorso di server, inseriamo il programma lato server che preleverà l'immagine inviata e l'andrà a mettere in un'apposita cartella chiamata 'uploads':
+  * All'interno della cartella 'htdocs', ovvero la certella dove XAMPP inizia il suo percorso di server, inseriamo il programma lato server che preleverà l'immagine inviata e l'andrà a mettere in un'apposita cartella chiamata 'uploads':[File che potete importare](https://drive.google.com/open?id=1-gjFlUtisgAeFyHhrSlG2WSVDSyHLBr0) per i vostri test
   * La Raspberry avrà il suo programma in Python che invierà la foto all'indirizzo IP del PC-Server
   
   <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Screen/screen_xampp.png"/>
