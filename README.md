@@ -331,6 +331,34 @@ Questo è stato pensato per limitare la spesa energetica... essendo tutto autoal
 Per procedere a questo abbiamo pensato di costruire un temporizzatore in due modi differenti(poi vedremo quale dei due sarà più conveninete utilizzare):
   * Soluzione 1 : Realizzazione del temporizzatore tramite un modulo DS3231M con ALLARM
     <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/schema%20alimentazione%20completo_sol1.png"/>
+    <table align='center'>
+      <tr align='center'>
+       <td>Modulo RTC DS3231</td>
+       <td>Raspberry Pi 3</td>
+       <td>BJT</td>
+      </tr>
+      <tr align='center'>
+       <td>VCC</td>
+       <td>Pin 1</td>
+      </tr>
+     <tr align='center'>
+       <td>GND</td>
+       <td>Pin 6</td>
+      </tr>
+     <tr align='center'>
+       <td>SDA</td>
+       <td>Pin 3</td>
+      </tr>
+     <tr align='center'>
+       <td>SCL</td>
+       <td>Pin 5</td>
+      </tr>
+    <tr align='center'>
+       <td>SQW</td>
+       <td></td>
+       <td>Base</td>
+      </tr>
+     </table>
   * Soluzione 2 : Realizzazione del temporizzatore tramite un modulo DS1302 e Arduino Nano
     <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/schema%20alimentazione%20completo.png"/>
     <table align='center'>
