@@ -335,6 +335,8 @@ Utilizzando la soluzione 2 lo schema complessivo sarà il seguente:
  Infine il pin digitale di Arduino Nano è collegato alla base del BJT che darà l'impulso per far accendere Raspberry all'ora desiderata.
  A Raspberry basta un piccolo impulso per accendersi e far partire il suo codice che scatterà la foto, elaborerà l'immagine e invierà tutto al web server.
 Infatti il BJT crea un cortocircuito del "P6 Reset", nonchè due connettori di Raspberry che fanno svegliare o riavviare la rasp appena il circuito si chiude.
+
+*N.B: L'accensione di Raspberry avverrà attraverso questo cortocircuito comandato da un modulo RTC e Arduino, mentre lo spegnimento avverrà in modo software... inserendo nello scketch che esegue rasp un semplice "shutdown"*
 ________________________________________________________________________________________________________________________
 
 ### <a name="ancora-prog_2"></a> *2) Progettazione Web-Database-Sicurezza*
