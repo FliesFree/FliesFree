@@ -227,8 +227,8 @@ Partiamo con la prima prova, in cui effettuaiamo una foto e un'elaborazione dell
 Per poter acquisire un'immagine si deve verificare prima il funzionamento della PiCamera connessa a Raspberry.
 Seguiamo questi semplici passi:
 * Collegare la PiCamera nell'apposito slot facendo attenzione di collegarlo nel modo giusto e nel giusto verso
-* Se avete seguito la guida prima di partire con la progettazione, allora avete abilitato anche la camera, altrimenti dovete abilitarla digitando da riga di comando 'sudo raspi-config' e andare nella sezione 'camera'
-* Testiamo il funzionamento della PiCamera digitando 'sudo raspistill -v -o acquisizione.jpg'
+* Se avete seguito la guida prima di partire con la progettazione, allora avete abilitato anche la camera, altrimenti dovete abilitarla digitando da riga di comando ```sudo raspi-config``` e andare nella sezione 'camera'
+* Testiamo il funzionamento della PiCamera digitando ```sudo raspistill -v -o acquisizione.jpg```
 * Se tutto è a posto la Raspberry scatterà una foto e vi mostrerà una preview della foto
 * Se si verificano dei problemi tipo "No data received from sensor. Check all connections, including the Sunny one on the camera board" potrebbe dipendere da diversi fattori:
   * Sottoalimentazione della scheda
@@ -238,21 +238,21 @@ Seguiamo questi semplici passi:
   * Lo slot dove avete collegato la PiCamera dovete farlo scattare una volta inserita la camera<br>
   
 Una volta fatto tutto e testata la camera, possiamo passare a programmare in Python.<br>
-Nella reposity è presente una cartella 'Programma_Prova1_Raspberry' dove all'interno sono presenti i codici da eseguire in python per scattare foto ed elaborare immagini... ma andiamo per gradi...<br>
-Scaricate la reposity di GitHub e copiate all'interno della vostra Raspberry la cartella enunciata poco fa, anche sulla home va bene, l'importante è eseguire lo script di codice "main.py".
+Nella reposity è presente una cartella '*Programma_Prova1_Raspberry*' dove all'interno sono presenti i codici da eseguire in python per scattare foto ed elaborare immagini... ma andiamo per gradi...<br>
+Scaricate la reposity di GitHub e copiate all'interno della vostra Raspberry la cartella enunciata poco fa, anche sulla home va bene, l'importante è eseguire lo script di codice "*main.py*".
 Come potete vedere nella cartella sono presenti diversi file, ognuno di questi ha al suo interno una o più funzioni che vengono richiamate dal main.
-Il file "cattura_immagine.py" ha al suo intreno una fnzione che acquisisce una foto attraverso la camera.
+Il file "*cattura_immagine.py*" ha al suo intreno una fnzione che acquisisce una foto attraverso la camera.
 <br>
-"data_ora.py" ha diverse funzione che gestiscono la data e l'ora attuale: queste funzioni saranno dispensabili per poter salvare le foto scattate e archiviarle per data e ora.<br>
-"elabora_immagine.py" è il file che contiene al suo interno due funzioni: la prima visualizza l'immagine  aschermo e la seconda è quella riservata all'image processing e sarà quella che spiegheremo nel maggior dettaglio.<br>
-"main.py" è una file che richiama gli altri file e le loro funzioni, in modo da avere un codice più pulito e più facile da modificare in futuro.<br>
+"*data_ora.py*" ha diverse funzione che gestiscono la data e l'ora attuale: queste funzioni saranno dispensabili per poter salvare le foto scattate e archiviarle per data e ora.<br>
+"*elabora_immagine.py*" è il file che contiene al suo interno due funzioni: la prima visualizza l'immagine  aschermo e la seconda è quella riservata all'image processing e sarà quella che spiegheremo nel maggior dettaglio.<br>
+"*main.py*" è una file che richiama gli altri file e le loro funzioni, in modo da avere un codice più pulito e più facile da modificare in futuro.<br>
 
 Esempio di acquisizione immagine:
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Esempi/2017_12_11_9.jpg"/>
 
 *Image Processing:*<br>
 Per poter effettuare l'image processing di un'immagine si utilizzano le librerie di OpenCV.<br>
-Per poterle utilizzare dovete installarle sul vostro Raspberry da riga di comando: 'sudo apt-get install python-picamera python3-picamera python-rpi.gpio' e 'sudo apt-get install python-opencv'.<br>
+Per poterle utilizzare dovete installarle sul vostro Raspberry da riga di comando: ```sudo apt-get install python-picamera python3-picamera python-rpi.gpio``` e ```sudo apt-get install python-opencv```.<br>
 <br>
 *In che modo avviene il ritrovamento di una forma o figura all'interno di una foto scattata?*<br>
 Avviene in 3 Fasi:
@@ -269,8 +269,8 @@ L'algoritmo funziona! Perchè scarta le forme più grandi e quelle non piene.<br
 A questo [Link](https://docs.opencv.org/master/d2/d96/tutorial_py_table_of_contents_imgproc.html) di OpenCV sono presenti tutti i tipi di algoritmo di ricerca, saturazione, esposizione e altro... in base al tipo di lavoro da fare sull'immagine, verrà scelto un algoritmo al posto di un altro.<br>
 Nel nostro caso abbiamo 2 cartelle che vengono usate per elaborare l'algoritmo:
 
-   * Directory 'Mosche': Contiene le immagini di mosche che verranno usate come campione per il confronto
-   * Directory 'Trappole': Contiene le immagine delle trappole scatate volta per volta e catalogate per data e ora
+   * Directory '*Mosche*': Contiene le immagini di mosche che verranno usate come campione per il confronto
+   * Directory '*Trappole*': Contiene le immagine delle trappole scatate volta per volta e catalogate per data e ora
   <br>
   
 Esempio di maching e ricerca di forme dell'immagine precedente:
@@ -290,28 +290,43 @@ Nel nostro caso, successivamente, inseriremo come immagini campione le mosche de
 **************************************************************************
 
 ##### <a name="ancora-prova2"></a> *Prova 2: Invio dati al WebServer*
+
+*Hardware occorrente:*
+* Raspberry Pi3
+* Camera Pi
+* Cartoncino per simulare trappola
+
+*Software occorrente:*
+* Python
+* Librerie Python:
+  *  OpenCV
+  *  PiCamera
+  *  PycURL(```apt-get install python-pycurl```)
+* XAMPP sul PC(per creare un server su cui testare l'invio di un file)
+
+
 Prima di procedere con la Prova2, nella reposity è presente un file dove spiega come effettuare una connessione con un database in Postgresql. Basta seguire la nostra [Guida](https://github.com/FliesFree/FliesFree/blob/master/Postgresql_Raspian_Python.md)
 <br>
 L'invio dati sul DB serve per immagazinare i dati all'interno di Raspberry(se lo si vuole aggiungere, ma Raspberry ha già una SD dove verranno immagazzinati i dati e tutte le foto scattate), ma i dati vanno mandati ad un Web Server per poter essere analizzati e salvati in un DB sicuro.
 Questi dati  verranno inoltrati al WebServer da riga di comando ('*curl*').
 <br>
 Possiamo avere due modalità:
-  * Tramite script python: inseriamo delle parole chiave che invieranno ed eseguiranno i comandi tramite shell(es: *call([command], shell=True)* )
+  * Tramite script python: inseriamo delle parole chiave che invieranno ed eseguiranno i comandi tramite shell(es: ```call([command], shell=True)``` )
   * Tramite libreria *pycurl*: la libreria fa tutto quello che abbiamo scritto prima
   
 A rigor di logica risulta più sicuro, intuitivo e facile adottare il secondo metodo.<br>
 
 Nella directory *Programma_Prova2_Raspberry* è presente l'intero programma che scatta la foto, elabora l'immagine e invia la foto elaborata al web server.
-Questo programma verrà eseguito da Raspberry facendolo partire con il comando *'python main.py'*<br>
+Questo programma verrà eseguito da Raspberry facendolo partire con il comando ```python main.py```<br>
 Una volta che il programma è in esecuzione effettuerà il suo lavoro e verificheremo quello che sta facendo dalla shell di Rasp... quando avrà completato l'operazione la nostra foto dovrà essere presente nella directory dove è stata mandata dal server web.
 <br>
 La parte del server web è stata strutturata e creata appositamente da [Andrea Polenta](https://github.com/poly94) per questo test.<br>
 Procediamo per gradi:
   * Installiamo la libreria di [PycURL](http://pycurl.io/)
-  * Digitiamo il comando: *'sudo apt-get install python-pycurl'*
+  * Digitiamo il comando: ```sudo apt-get install python-pycurl```
   * Una volta installata la libreria testiamo il suo funzionamento con:
-    * '*python*'
-    * '*import pycurl*'<br>
+    * ```python```
+    * ```import pycurl```<br>
    Se tutto è a posto non dovremmo rilevare errori...
    
   * Adesso è possibile aprire la shell alla cartella '*Programma_prova2_Raspberry*' ed eseguire il main
