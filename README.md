@@ -205,6 +205,22 @@ Dividiamo questa fase di progettazione in *Prove*, dove andremo a descrivere pas
 Tutte queste fasi verranno parcellizzate, in modo da facilitare la realizzazione del prototipo.
 <br>
 ##### <a name="ancora-prova1"></a> *Prova 1: Acquisizione immagine e image processing*
+
+*Hardware occorrente:*
+* Raspberry Pi 3
+* Alimentatore per Rasp
+* Camera Raspberry
+* Cavo LAN
+* Cartoncino per simulare trappola mosche
+
+*Software occorrente:*
+* Python
+* Librerie Raspberry:
+  *  Picamera(```sudo apt-get install python-picamera python3-picamera python-rpi.gpio```)
+  *  OpenCV(```apt-get install python-numpy```, ```apt-get install python-opencv```, ```apt-get install python-scipy```, ```apt-get install ipython```)
+  *  Matplotlib(```apt-get install python-matplotlib```)
+  
+  
 Partiamo con la prima prova, in cui effettuaiamo una foto e un'elaborazione dell'immagine, in modo da trovare in essa una o più figure cercate(nel nostro cado mosche, ma per il test ci limitiamo a delle forme disegnate a penna su un semplice cartoncino).<br>
 <br>
 *Acquisizione Immagine:*<br>
