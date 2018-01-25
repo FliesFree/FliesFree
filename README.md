@@ -320,6 +320,11 @@ Ricapitolando:
 ***************************************************************************
 
 ##### <a name="ancora-prova3"></a> *Prova 3: Comunicazione tra nodi*
+Per la comunicazione tra due nodi ci serviamo di un dispositivo progettato dalla [Apio](https://www.apio.cc/)<br>
+Tale dispositivo, chiamato Dongle, invia e riceve informazioni(dati, file, immagini ecc...) a grandi distanze.<br>
+Prima di partire con la fase di progettazione sull'invio e la ricezione dei dati dobbiamo installare un pò di cose sulle nostre Dongle e sulle Raspberry.
+Rimando tutto a una reposity di GitHub dove è spiegato tutto: https://github.com/ApioLab
+<br>
 
 
 ***************************************************************************
