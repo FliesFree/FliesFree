@@ -35,6 +35,7 @@ __________________________________________________________________
     * <a href="#ancora-prova2">Prova2:Invio dati al Web Server</a>
     * <a href="#ancora-prova3">Prova3:Comunicazione tra più nodi</a>
     * <a href="#ancora-prova4">Prova4:Sleep&Wake Automatico</a>
+    * <a href="#ancora-prova5">Prova5:Alimentazione</a>
   * <a href="#ancora-prog_2">Progettazione Web-Database-Sicurezza</a>
  
 __________________________________________________________________________________
@@ -404,6 +405,13 @@ Per procedere a questo abbiamo pensato di costruire un temporizzatore in due mod
 Infatti il BJT crea un cortocircuito del "P6 Reset", nonchè due connettori di Raspberry che fanno svegliare o riavviare la rasp appena il circuito si chiude.
 
 *N.B: L'accensione di Raspberry avverrà attraverso questo cortocircuito comandato da un modulo RTC e Arduino, mentre lo spegnimento avverrà in modo software... inserendo nello scketch che esegue rasp un semplice "shutdown"*
+
+***************************************************************************
+
+##### <a name="ancora-prova5"></a> *Prova 5: Alimentazione*
+Per ultimo, ma non meno importante, parliamo dell'alimentazione... anzi dell'auto-alimentazione.<br>
+L'intero sistema, come dicevamo inizialmente, deve essere allocato in un posto dove non si hanno prese di corrente; la soluzione più efficiente è quella di utilizzare una pila ricaricabile al litio e un pannello solare.<br>
+Adesso spieghiamo passo passo i collegamenti e le modalità di lavoro...<br>
 ________________________________________________________________________________________________________________________
 
 ### <a name="ancora-prog_2"></a> *2) Progettazione Web-Database-Sicurezza*
