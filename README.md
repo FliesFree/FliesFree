@@ -443,6 +443,17 @@ Infatti il BJT crea un cortocircuito del "P6 Reset", nonchè due connettori di R
 Per ultimo, ma non meno importante, parliamo dell'alimentazione... anzi dell'auto-alimentazione.<br>
 L'intero sistema, come dicevamo inizialmente, deve essere allocato in un posto dove non si hanno prese di corrente; la soluzione più efficiente è quella di utilizzare una pila ricaricabile al litio e un pannello solare.<br>
 Adesso spieghiamo passo passo i collegamenti e le modalità di lavoro...<br>
+
+*Hardware occorrente:*
+* Raspberry Pi 3
+* [Power Boost 3-5 volt](https://www.adafruit.com/product/1903)
+* [Caricatore Solare/Pila](https://www.adafruit.com/product/390)
+* [Pannello solare](https://www.adafruit.com/product/200)
+* [Batteria al litio](https://www.adafruit.com/product/328)
+* Cavo USB
+* Saldatore e stagno per le saldature necessarie
+
+<img src="https://media.giphy.com/media/26DMUnuRew5ZMHxOo/giphy.gif"/>
 ________________________________________________________________________________________________________________________
 
 ### <a name="ancora-prog_2"></a> *2) Progettazione Web-Database-Sicurezza*
