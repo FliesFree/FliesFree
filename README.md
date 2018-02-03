@@ -358,6 +358,25 @@ Prima di partire con la fase di progettazione sull'invio e la ricezione dei dati
 Rimando tutto a una reposity di GitHub dove è spiegato tutto: https://github.com/ApioLab
 <br>
 
+*Hardware occorrente:*
+* 2 Raspberry Pi 3
+* 2 Camera Pi
+* Cartoncino per simulare trappola
+* 2 Dongle Apio
+
+*Software occorrente:*
+* Python
+  * Librerie in Python:
+    * PycURL
+    * http.client (già preinstallata sulla versione 3.4 del Python)
+* [Arduino IDE](https://www.arduino.cc/en/Main/OldSoftwareReleases) per installare i firmware sulle dongle
+* [Driver](https://github.com/ApioLab/Apio-Hardware) per Arduino per poter riconoscere le dongle
+* [ApioOS](https://github.com/ApioLab/ApioOS) per il nodo master
+* [Nodejs](https://hackerstribe.com/2015/installare-node-js-su-raspberry-pi/)
+
+
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/comunicazione_dongle_slave%2Bmaster.png"/>
+
 
 ***************************************************************************
 
