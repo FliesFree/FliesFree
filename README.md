@@ -204,6 +204,9 @@ Una volta inizializzato Raspberry e collegato alla rete, si può partire a proge
 Dividiamo questa fase di progettazione in *Prove*, dove andremo a descrivere passo passo come realizzzare un prototipo in grado di scattare foto, elaborare l'immagine e inviarle sul server.
 Tutte queste fasi verranno parcellizzate, in modo da facilitare la realizzazione del prototipo.
 <br>
+
+Il firmware completo lo potete trovare in questa reposity: https://github.com/FliesFree/firmware
+
 ##### <a name="ancora-prova1"></a> *Prova 1: Acquisizione immagine e image processing*
 
 *Hardware occorrente:*
