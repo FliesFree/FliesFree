@@ -392,6 +392,7 @@ Tutte le stringhe saranno salvate in automatico sul db della master e quest'ulti
 Attraverso un trigger! Una volta che la slave finisce l'invio dei pacchetti innesca un trigger(bottone virtuale) che da alla master l'OK per prelevare tali valori e concatenarli.
 Una volta che la master ha elaborato l'immagine e la salva nella sua cartella apposita, l'intero database viene cancellato per poter ospitare le prossime sottostringhe in base64.
 
+<img src="https://github.com/FliesFree/firmware/blob/master/diagram.png"/>
 
 ***************************************************************************
 
