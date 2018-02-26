@@ -378,6 +378,21 @@ Rimando tutto a una reposity di GitHub dove è spiegato tutto: https://github.co
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/comunicazione_dongle_slave%2Bmaster.png"/>
 
 
+In questa sezione vedremo nel dettaglio la comunicazione! Trovate quanto serve per le rasp nella directory: `Programma_Prova3_Raspberry`
+<br>
+Inserite il codice presente in "Master" sul vostro nodo master e "Slave" nel nodo slave.
+<br>
+Per comunicazione intendiamo il passaggio di parametri, quali numero mosche trovate e immagine scattata, tra il nodo slave e il master.
+Il nodo slave manda alla master il numero di mosche che ha trovato sulla trappola a feromoni e l'immagine scattata.
+Per poter mandare l'immagine, essendo troppo grande e non potendola inviare nel suo formato, si è deciso di convertirla in "base64".
+Convertendo un'immagine in base64 non facciamo altro che convertire l'immagine in una serie di caratteri alfanumerici di dimensione N.
+Una volta convertita in una stringa di lunghezza N viene frammentata in tante sottostringhe che verranno inviate attraverso un ciclo for.
+Tutte le stringhe saranno salvate in automatico sul db della master e quest'ultima andrà a prelevare tutti i valori e ricompattarli per ricreare l'immagine.<br>
+*In che modo la master capisce che la slave a mandato tutti i pacchetti?*
+Attraverso un trigger! Una volta che la slave finisce l'invio dei pacchetti innesca un trigger(bottone virtuale) che da alla master l'OK per prelevare tali valori e concatenarli.
+Una volta che la master ha elaborato l'immagine e la salva nella sua cartella apposita, l'intero database viene cancellato per poter ospitare le prossime sottostringhe in base64.
+
+
 ***************************************************************************
 
 ##### <a name="ancora-prova4"></a> *Prova 4: Sleep&Wake Automatico*
