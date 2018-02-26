@@ -3,15 +3,14 @@ import base64
 import data_ora
 import time
 
-def preleva_lista():
-	db = MySQLdb.connect(host="localhost",user="root",passwd="root",db="Logs")
-
-	cur = db.cursor()
+def preleva_lista():	
 	controllo = 0
 	cod = 0
 	ident = 0
 	contr = 0
 	for n in range(0,40):
+		db = MySQLdb.connect(host="localhost",user="root",passwd="root",db="Logs")
+		cur = db.cursor()
 		cur.execute("SELECT id,onoff,codice FROM `11` WHERE onoff=1")
 		for row in cur.fetchall():
 			cod = row[2]
@@ -47,9 +46,9 @@ def preleva_lista():
 			contr = 1
 			print("Immagine elaborata!")
 		
+		db.close()
 		time.sleep(10)
-	
-	db.close()
+		
 	
 	
 def svuota_lista():
