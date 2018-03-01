@@ -22,13 +22,13 @@ def frammenta():
 		print(n)
 		time.sleep(0.2)
 		if n > 0:
-			dec = dec+90
+			dec = dec+80
 			n = dec
 			if n > num:
 				break
 			else:	
 				print(n)
-				m = n+90
+				m = n+80
 				if m > num:
 					m = num
 					nuova_stringa = image_64[n:m].replace("/","_")
@@ -47,7 +47,7 @@ def frammenta():
 					#time.sleep(0.05)
 		else:
 			print(n)
-			m = n+90
+			m = n+80
 			#print(m)
 			nuova_stringa = image_64[n:m].replace("/","_")
 			nuova_stringa = nuova_stringa.replace("\n","")
