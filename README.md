@@ -397,6 +397,12 @@ Una volta che la master ha elaborato l'immagine e la salva nella sua cartella ap
 
 <img src="https://github.com/FliesFree/firmware/blob/master/diagram.png"/>
 
+Sulla Slave è presente un programma in Nodejs che esegue continuamente un ciclo di invii. Tramite il programma in python non facciamo altro che inviare alla dongle quello che poi la dongle invierà alla sua "compagna" che le inserirà tramite uno script in Nodejs sul database. Seccessivamente a questo attingiamo tutti i valori che ci servono per comporre l'immagine dal db.
+<br>
+*Ma cosa succede se la slave non riesce a mandare l'immagine?*
+La master è accesa e in ascolto per 10 minuti(i tempi possono essere anche prolungati) in modo che non consumi troppa energia, che, una volta esauriti, portano lo spegnimento della master.
+La slave si spegne appena finisce di mandare tutta l'immagine o appena scade il tempo... considerando che il nostro è un sistema alimentato a pile e energia solare, non possiamo sprecare minuti preziosi che servono all'intero ciclo di lavoro.
+
 ***************************************************************************
 
 ##### <a name="ancora-prova4"></a> *Prova 4: Sleep&Wake Automatico*
