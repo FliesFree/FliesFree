@@ -409,77 +409,20 @@ La slave si spegne appena finisce di mandare tutta l'immagine o appena scade il 
 In questa prova vediamo come realizzare un piccolo circuito per accendeere e spegnere Raspberry in modo automatico, in determinate ore della giornata.
 Questo è stato pensato per limitare la spesa energetica... essendo tutto autoalimentato da una pila e un pannello solare, dobbiamo gestire l'energia in modo parsimonioso.
 <br>
-Per procedere a questo abbiamo pensato di costruire un temporizzatore in due modi differenti(poi vedremo quale dei due sarà più conveninete utilizzare):
-  * Soluzione 1 : Realizzazione del temporizzatore tramite un modulo DS3231M con ALLARM
-    <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/schema%20alimentazione%20completo_sol1.png"/>
-    <table align='center'>
-      <tr align='center'>
-       <td>Modulo RTC DS3231</td>
-       <td>Raspberry Pi 3</td>
-       <td>BJT</td>
-      </tr>
-      <tr align='center'>
-       <td>VCC</td>
-       <td>Pin 1</td>
-      </tr>
-     <tr align='center'>
-       <td>GND</td>
-       <td>Pin 6</td>
-      </tr>
-     <tr align='center'>
-       <td>SDA</td>
-       <td>Pin 3</td>
-      </tr>
-     <tr align='center'>
-       <td>SCL</td>
-       <td>Pin 5</td>
-      </tr>
-    <tr align='center'>
-       <td>SQW</td>
-       <td></td>
-       <td>Base</td>
-      </tr>
-     </table>
-  * Soluzione 2 : Realizzazione del temporizzatore tramite un modulo DS1302 e Arduino Nano
-    <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Struttura/schema%20alimentazione%20completo.png"/>
-    <table align='center'>
-      <tr align='center'>
-       <td> </td>
-       <td>Arduino Nano</td>
-       <td>Raspberry Pi 3</td>
-       <td>Alzatore di tensione</td>
-      </tr>
-      <tr align='center'>
-       <td>Modulo RTC</td>
-       <td>RST=D2, DAT=D3, CLK=D4</td>
-       <td>CLK=Pin2, DAT=Pin5</td>
-       <td>Pila Tampone</td>
-      </tr>
-     <tr align='center'>
-       <td>Arduino Nano</td>
-       <td></td>
-       <td>D12=PinGPIO_Disponibile</td>
-       <td>VCC=Out, GND=GND</td>
-      </tr>
-     <tr align='center'>
-       <td>Raspberry Pi 3</td>
-      <td>PinGPIO_Disponibile=D12</td>
-      <td></td>
-      <td>Alimentatore USB=Alimentazione Booster</td>
-      </tr>
-     </table>
-     
- *N.B:I due schemi hanno come prima differenza evidente il modulo RTC usato... infatti nel primo schema abbiamo un DS3231 che ha un pin per l'allarme e possiamo utilizzare per mandare un impulso per far scattare il BJT e accendere Rasp, il secondo schema ha un semplice RTC DS1302 che non possiede un allarme e quindi per poterlo adattare ha bisogno di un Arduino Nano.*
- 
- Come possiamo vedere distinguiamo due tipi di alimentazioni indipendenti:
-   * Alimentazione solare: che alimenta Raspberry attraverso un modulo TP4056 e un Voltage Booster(3.7v to 5v)
-   * Alimentazione a pila tampone(Pila RTC): che alimenta il modulo RTC e Arduino Nano con un Voltage Booster
-   
- Infine il pin digitale di Arduino Nano è collegato alla base del BJT che darà l'impulso per far accendere Raspberry all'ora desiderata.
- A Raspberry basta un piccolo impulso per accendersi e far partire il suo codice che scatterà la foto, elaborerà l'immagine e invierà tutto al web server.
-Infatti il BJT crea un cortocircuito del "P6 Reset", nonchè due connettori di Raspberry che fanno svegliare o riavviare la rasp appena il circuito si chiude.
+La soluzione a questo problema ha un solo nome:
+###### WITTI PI 2
+*Cos'è* [Witty Pi](http://www.uugear.com/product/wittypi2/)?<br>
+Witty Pi è una scheda progettata dalla [UUGear](http://www.uugear.com/) che permette di regolare complessi cicli di SLeep&Wake per Raspberry. Prima di tutto possiamo dire che Witty è una scheda compatta che si adagia perfettamente su Raspberry(è costruita apposta!), ha un RTC che controlla il tempo, controlla l'alimentazione per Rasp e imposta i shutdown e startup anche in modo molto complesso attraverso dei "script schedule". <br>
 
-*N.B: L'accensione di Raspberry avverrà attraverso questo cortocircuito comandato da un modulo RTC e Arduino, mentre lo spegnimento avverrà in modo software... inserendo nello scketch che esegue rasp un semplice "shutdown"*
+<img src="https://i.pinimg.com/originals/8d/07/6f/8d076f971cb9b684664b7eb2cd509169.jpg"/>
+
+In questo [link](http://www.uugear.com/doc/WittyPi2_UserManual.pdf) trovate il manuale da seguire per integrare tale scheda al proprio progetto!<br>
+Se volete testare i vostri cicli di Sleep&Wake prima di piazzarli sul modulo, potete testarli su questo emulatore: http://www.uugear.com/app/wittypi-scriptgen/
+
+<br>
+
+Potete utilizzare Witty Pi 2 in ogni vostro progetto che ha bisogno di una spesa energetica molto limitata!
+
 
 ***************************************************************************
 
